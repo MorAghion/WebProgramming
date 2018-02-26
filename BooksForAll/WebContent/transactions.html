@@ -1,0 +1,66 @@
+<!--gets from the controller all of the transaction and displays them in a scrollable table-->
+<!--The admin can choose wether to view transactions by username or by book name-->
+<div ng-controller="transactionsController">
+<h1>TRANSACTIONS</h1>
+
+<br>
+<button type="button" class="btn btn-info" ng-click="sortByUsers($index)">Sort by users</button>
+<button type="button" class="btn btn-info"  ng-click="sortByBooks()">Sort by books</button>
+
+<div ng-show="byUsers">
+
+  <div class="panel-heading"><b>Transactions by User-name:</b></div>
+<div class="panel panel-info" id="transactiontable">
+
+  <!-- Table -->
+  <div class="pre-scrollable" id="scrolling">
+ 	 <table class="table table-striped">
+ 	 
+ 	  
+ 	  <thead>
+	     <tr >
+		    <th>User-name</th>
+		    <th>Books Purchased</th> 
+	 	 </tr>
+	  </thead>
+	 	 
+	 <tbody>	 
+	 	 <tr ng-repeat="user in allUsers" >
+		    <td>{{user.username}}</td>
+		    <td>{{user.booksPurchased}}</td> 
+		    
+	 	 </tr>
+	  </tbody>
+    	</table>
+    	</div>
+</div>
+
+</div>
+<div ng-show="byBooks">
+ <div class="panel-heading"><b>Transactions by books:</b></div>
+<div >
+<div class="panel panel-info" id="transactiontable">
+
+  <!-- Table -->
+    <div class="pre-scrollable" id="scrolling">
+   	 <table class="table table-striped">
+ 	 <thead>
+	     <tr>
+		    <th>Book name</th>
+		    <th>Purchased by</th> 
+	 	 </tr>
+	 </thead>
+	 
+	 <tbody>	 
+	 	 <tr ng-repeat="book in allBooks">
+		    <td>{{book.name}}</td>
+		    <td>{{book.purchasedBy}}</td> 
+	 	 </tr>
+	 </tbody>
+    	</table>
+    	</div>
+</div>
+</div>
+</div>
+</div>
+

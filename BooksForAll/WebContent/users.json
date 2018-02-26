@@ -1,0 +1,171 @@
+[
+		{
+			"username": "alice", "email" : "alice@gmail.com", "phone":"0501111222", 
+			"city": "ashdod", "street":"amagenim", "number":"1", "zipcode":"11111", 
+			"password":"aaa", "nickname":"alice", "description":"akuna matata", "photo":"https://goo.gl/g4XepV", 
+			"booksPurchased":"Aladdin,Cinderella,Tarzan,Alice in Wonderland,Adventures of Sherlock Holmes,White Fang,Grimm's Fairy Stories,The Wizard of Oz,The Frog Prince,Hercules", 
+			"booksLiked":"Aladdin,Alice in Wonderland,Tarzan,Hercules",
+			"isAdmin":"No"
+		},
+		
+		{
+			"username": "bob", "email" : "bob@gmail.com", "phone":"0502222333", 
+			"city": "binayamina", "street":"ben azar", "number":"2", "zipcode":"22222", 
+			"password":"bbb", "nickname":"bob", "description":"be happy", "photo":"https://goo.gl/6D3hNB", 
+			"booksPurchased":"Aladdin,Cinderella,Tarzan,Alice in Wonderland,Adventures of Sherlock Holmes,White Fang,Grimm's Fairy Stories,The Wizard of Oz,The Frog Prince,Hercules", 
+			"booksLiked":"Aladdin,Alice in Wonderland,White Fang,Grimm's Fairy Stories",
+			"isAdmin":"No" },
+		{
+			"username": "carl", "email" : "carl@gmail.com", "phone":"0503333444", 
+			"city": "haifa", "street":"cancun", "number":"3", "zipcode":"33333", 
+			"password":"ccc", "nickname":"carl", "description":"can do", "photo":"https://goo.gl/YYZcTY", 
+			"booksPurchased":"Aladdin,Cinderella,Tarzan,Alice in Wonderland,Adventures of Sherlock Holmes,White Fang,Grimm's Fairy Stories,The Wizard of Oz,The Frog Prince,Hercules", 
+			"booksLiked":"Alice in Wonderland,White Fang,Grimm's Fairy Stories,The Wizard of Oz",
+			"isAdmin":"No" 
+		},
+		{
+			"username": "dana", "email" : "dana@gmail.com", "phone":"0504444555", 
+			"city": "dganiya", "street":"deniya", "number":"4", "zipcode":"44444", 
+			"password":"ddd", "nickname":"dana", "description":"do i do or do you do?", "photo":"https://goo.gl/i3FUEk", 
+			"booksPurchased":"Aladdin,Cinderella,Tarzan,Alice in Wonderland,Adventures of Sherlock Holmes,White Fang,Grimm's Fairy Stories,The Wizard of Oz,The Frog Prince,Hercules", 
+			"booksLiked":"Alice in Wonderland,Tarzan,White Fang," ,
+			"isAdmin":"No"
+		},
+		{
+			"username": "earl", "email" : "earl@gmail.com", "phone":"0505555666", 
+			"city": "ein zivan", "street":"ein li musag", "number":"5", "zipcode":"55555", 
+			"password":"eee", "nickname":"earl", "description":"ein li discription", "photo":"https://goo.gl/12XJQ2", 
+			"booksPurchased":"Aladdin,Cinderella,Tarzan,Alice in Wonderland,Adventures of Sherlock Holmes,White Fang,Grimm's Fairy Stories,The Wizard of Oz,The Frog Prince,Hercules", 
+			"booksLiked":"Cinderella,Tarzan,White Fang,Hercules",
+			"isAdmin":"No" 
+		},
+		{
+			"username": "fiona", "email" : "fiona@gmail.com", "phone":"0506666777", 
+			"city": "feisal", "street":"feisal", "number":"6", "zipcode":"66666", 
+			"password":"fff", "nickname":"fiona", "description":"foo you all!", "photo":"noPic.jpg", 
+			"booksPurchased":"Aladdin,Cinderella,Tarzan,Alice in Wonderland,Adventures of Sherlock Holmes,White Fang,Grimm's Fairy Stories,The Wizard of Oz,The Frog Prince,Hercules", 
+			"booksLiked":"Cinderella,White Fang,The Wizard of Oz,Hercules" ,
+			"isAdmin":"No"
+		},
+		{
+			"username": "goerge", "email" : "george@gmail.com", "phone":"0507777888", 
+			"city": "givataiim", "street":"gvaot", "number":"7", "zipcode":"77777", 
+			"password":"ggg", "nickname":"george", "description":"guess who and what", "photo":"https://goo.gl/tfcP5u", 
+			"booksPurchased":"Aladdin,Cinderella,Tarzan,Alice in Wonderland,Adventures of Sherlock Holmes,White Fang,Grimm's Fairy Stories,The Wizard of Oz,The Frog Prince,Hercules", 
+			"booksLiked":"Cinderella,White Fang,Grimm's Fairy Stories,The Wizard of Oz,Hercules" ,
+			"isAdmin":"No"
+		},
+		{
+			"username": "hana", "email" : "hana@gmail.com", "phone":"0508888999", 
+			"city": "haifa", "street":"haprahim", "number":"8", "zipcode":"88888", 
+			"password":"hhh", "nickname":"hana", "description":"ham and baicon is life", "photo":"noPic.jpg", 
+			"booksPurchased":"Aladdin,Cinderella,Tarzan,Alice in Wonderland,Adventures of Sherlock Holmes,White Fang,Grimm's Fairy Stories,The Wizard of Oz,The Frog Prince,Hercules", 
+			"booksLiked":"Cinderella,Grimm's Fairy Stories,The Wizard of Oz,The Frog Prince" ,
+			"isAdmin":"No"
+		},
+		{
+			"username": "israel", "email" : "israel@gmail.com", "phone":"0509999000", 
+			"city": "if", "street":"else", "number":"9", "zipcode":"99999", 
+			"password":"iii", "nickname":"israel", "description":"i'm blue da boo di da boo da'", "photo":"noPic.jpg", 
+			"booksPurchased":"Aladdin,Cinderella,Tarzan,Alice in Wonderland,Adventures of Sherlock Holmes,White Fang,Grimm's Fairy Stories,The Wizard of Oz,The Frog Prince,Hercules", 
+			"booksLiked":"Cinderella,Adventures of Sherlock Holmes,Tarzan,The Frog Prince" ,
+			"isAdmin":"No"
+		},
+		{
+			"username": "jony", "email" : "jony@gmail.com", "phone":"0500000111", 
+			"city": "jerusalem", "street":"jib", "number":"10", "zipcode":"10101", 
+			"password":"jjj", "nickname":"jony", "description":"jo te amo, jo te kiero", "photo":"noPic.jpg", 
+			"booksPurchased":"Aladdin,Cinderella,Tarzan,Alice in Wonderland,Adventures of Sherlock Holmes,White Fang,Grimm's Fairy Stories,The Wizard of Oz,The Frog Prince,Hercules", 
+			"booksLiked":"Adventures of Sherlock Holmes,The Wizard of Oz" ,
+			"isAdmin":"No"
+		},
+		{
+			"username": "Kaya", "email" : "kaya@gmail.com", "phone":"050998778", 
+			"city": "Holon", "street":"Jerusalem av.", "number":"3", "zipcode":"2970077", 
+			"password":"123", "nickname":"kayush", "description":"Hi I am kaya and I like books! I am 10 years old", "photo":"https://goo.gl/8DPY24", 
+			"booksPurchased":"", 
+			"booksLiked":"" ,
+			"isAdmin":"No"
+		},
+		{
+			"username": "Linoy", "email" : "linoy@homail.co.il", "phone":"0549633212", 
+			"city": "Haifa", "street":"Aba Hushi", "number":"9", "zipcode":"908989", 
+			"password":"234", "nickname":"linlin", "description":"BOOKS RULE!", "photo":"noPic.jpg", 
+			"booksPurchased":"", 
+			"booksLiked":"",
+			"isAdmin":"No" 
+		},
+		{
+			"username": "Mor", "email" : "mor@gmail.com", "phone":"0547677353", 
+			"city": "Eilat", "street":"Savion", "number":"11", "zipcode":"18477", 
+			"password":"123", "nickname":"mori", "description":"I prefer reading books than program", "photo":"noPic.jpg", 
+			"booksPurchased":"The Wizard of Oz,The Frog Prince,Hercules", 
+			"booksLiked":"" ,
+			"isAdmin":"No"
+		},
+		{
+			"username": "Noy", "email" : "noy@walla.co.il", "phone":"0778833334", 
+			"city": "Ashdod", "street":"kalanit", "number":"15", "zipcode":"78866", 
+			"password":"89007", "nickname":"noy the queen", "description":"I am the queen of books", "photo":"noPic.jpg", 
+			"booksPurchased":"", 
+			"booksLiked":"",
+			"isAdmin":"No" 
+		},
+		{
+			"username": "Ori", "email" : "ori@walla.co.il", "phone":"0778865554", 
+			"city": "Yavne", "street":"Yigal Alon", "number":"26", "zipcode":"66883", 
+			"password":"3455544", "nickname":"ori", "description":"", "photo":"noPic.jpg", 
+			"booksPurchased":"", 
+			"booksLiked":"",
+			"isAdmin":"No" 
+		},
+		{
+			"username": "Paul", "email" : "paul@gmail.com", "phone":"0547755587", 
+			"city": "Neve Ur", "street":"Main", "number":"13", "zipcode":"45455", 
+			"password":"paul145", "nickname":"paul_p", "description":"I dont have a description", "photo":"https://goo.gl/qNcC2L", 
+			"booksPurchased":"", 
+			"booksLiked":"",
+			"isAdmin":"No" 
+		},
+		{
+			"username": "Qelvin", "email" : "theking@gmail.com", "phone":"0548688945", 
+			"city": "Qarmiel", "street":"Qramim", "number":"89", "zipcode":"23355", 
+			"password":"QQQ123", "nickname":"BookReader", "description":"I am a kid and i read books here and everywhere", "photo":"noPic.jpg", 
+			"booksPurchased":"", 
+			"booksLiked":"",
+			"isAdmin":"No" 
+		},
+		{
+			"username": "Revital", "email" : "revital@walla.co.il", "phone":"0509987776", 
+			"city": "Karmiel", "street":"Hativat yiftah", "number":"55", "zipcode":"90077", 
+			"password":"678!@", "nickname":"Tali", "description":"I am lazy and i like to sleep and web!!!!!", "photo":"noPic.jpg", 
+			"booksPurchased":"", 
+			"booksLiked":"" ,
+			"isAdmin":"No"
+		},
+		{
+			"username": "Shnuki", "email" : "Shnuki@gmail.com", "phone":"0507455362", 
+			"city": "Tel aviv", "street":"Laskov", "number":"23", "zipcode":"78951", 
+			"password":"Shnuki", "nickname":"shnuknuk", "description":"what is description???", "photo":"noPic.jpg", 
+			"booksPurchased":"", 
+			"booksLiked":"",
+			"isAdmin":"No" 
+		},
+		{
+			"username": "Tal", "email" : "tal@gmail.com", "phone":"0502020202", 
+			"city": "telaviv", "street":"tirosh", "number":"555", "zipcode":"12345", 
+			"password":"ttt", "nickname":"tal", "description":"tell me and i'll tell you", "photo":"noPic.jpg", 
+			"booksPurchased":"", 
+			"booksLiked":"",
+			"isAdmin":"No" 
+		},
+		{
+			"username": "admin", "email" : "admin@gmail.com", "phone":"0505972006", 
+			"city": "Nesher", "street":"keren hayesod", "number":"31", "zipcode":"123456", 
+			"password":"Passw0rd", "nickname":"tpresman", "description":"Give me 100 please!!!!!", "photo":"noPic.jpg", 
+			"booksPurchased":"", 
+			"booksLiked":"",
+			"isAdmin":"Yes" 
+		}
+		
+]

@@ -1,0 +1,91 @@
+<!-- A "help me" page that enables the admin send responses to the users -->
+<div ng-controller="adminHelpMeController">
+<h1>HELP THE USERS</h1>
+
+<div class="panel-heading"><b>Messages from users</b></div>
+<div class="panel panel-info"id="transactiontable">
+
+  <!-- Table -->
+  <div class="pre-scrollable" id="scrolling">
+ 	 <table class="table table-striped"  >
+ 	 
+ 	  
+ 	  <thead>
+	     <tr >
+		    <th>Message ID</th>
+		    <th>From</th>
+		    <th>Message Content</th> 
+		    <th>Response</th> 
+	 	 </tr>
+	  </thead>
+	 	 
+	 <tbody>	 
+	 	 <tr ng-repeat="msg in toAdminData" >
+		    <td>{{msg.id}}</td>
+		    <td>{{msg.username}}</td>
+			<td>{{msg.fromUser}}</td> 			
+		    <td><button type="button" class="btn btn-primary btn-md" id="toUser"data-target="#toUserModal" 
+		    			ng-click="answerHelpMe(msg.id)">Responde to user</button></td> 
+	 	 </tr>
+	  </tbody>
+    	</table>
+    	
+    	
+<!--HELP ME MODAL-->
+
+				<div class="modal fade" id="toUserModal" tabindex="-1" role="dialog"
+					aria-labelledby="toUserModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"
+									aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h4 class="modal-title" id="toUserModalLabel">Responde to user</h4>
+							</div>
+<!--modal body-->							
+							<div class="modal-body">
+								<form name="toUser">
+									<div class="form-group"
+										ng-class="{ 'has-error' : toUser.msgToUser.$dirty && toUser.msgToUser.$error.required}">
+										<label for="message-text" class="control-label">Your
+											Message: &nbsp &nbsp <small>up to 1000 characters</small></label>
+										<textarea class="form-control" name="msgToUser" id="message-text"
+											ng-model="msgToUser" maxlength="1000" required></textarea>
+										<div ng-show="showErrMsg">
+											<div class="alert alert-warning" role="alert"> Your response is too long!</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<div class="form-actions">
+									<button type="button" class="btn btn-default"
+										data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary"
+										ng-click="SubmitResponse()" ng-disabled="toUser.$invalid">Save
+										changes</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+
+
+
+</div>
+
+
+
+</div>
+<br><br>
+				<div ng-show="isAdded">
+					<div id="verification" class="alert alert-success" role="alert">
+						Your response has been been sent to the user!</div>
+				</div>
+
+
+
+</div>

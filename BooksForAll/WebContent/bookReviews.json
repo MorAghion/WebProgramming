@@ -1,0 +1,573 @@
+
+[
+		{
+			"id":"1","username": "alice", "bookname":"Aladdin", 
+			"review":"A cold thriller, exploring the exploitation of violence by heaping up a huge quantity of exploitive violence itself to make some points about what is the public   s attitude and tolerance level for the random violence that is present in society. In other words, this is an exploitive violent film railing against exploitive violent films, if that makes sense. It holds to the so-called philosophy, of fighting fire with fire.", 
+			"approved":"true" 
+		},
+		{
+			"id":"2","username": "alice", "bookname":"Cinderella",
+			"review":". By crafting an intelligent screenplay and not going for the unnecessary showing of gore, much of this is done off-screen, which might be almost as horrific as seeing the actual mayhem, the director is able to keep the film arty. But, by playing with the public   s prurient interest in violence as a way of life",
+			"approved":"true" 
+		},
+		{
+			"id":"3","username": "alice", "bookname":"Alice in Wonderland", 
+			"review":", something they have been numbed into accepting as part of their television and MTV inheritance, this powerful story has a chilling affect on rationality, questioning the viewing habits and the responses to violence the public has", 
+			"approved":"true" 
+		},
+		{
+			"id":"4","username": "alice", "bookname":"Adventures of Sherlock Holmes", 
+			"review":"also clean-cut, Paul (Arno), soon arrives to torment the couple, smacking Georg   s knee with a golf club so that he is disabled for the remainder of this hostage situation and is unable to properly defend his family. There is also the most riveting scene in the movie, where Anna is forced to strip, subject to possible rape, while her son is blindfolded and her husband is forced to answer ridiculous questions", 
+			"approved":"true" 
+		},
+		{
+			"id":"5","username": "alice", "bookname":"Tarzan", 
+			"review":"This film is about a wealthy, well-educated couple, Georg and Anna (Ulrich and Suzanne) and their young son, Georg jr. (Stefan), going to their isolated luxurious, lakeside summer resort home, to do some boating, golfing and escape from the summer heat. A polite, clean-cut intruder, Peter (Frank), comes in to borrow eggs from them for their neighbor and won   t leave, turning rude, as his partner", 
+			"approved":"true" 
+		},
+		{
+			"id":"6","username": "alice", "bookname":"White Fang", 
+			"review":"We consider the problem of classifying documents not by topic, but by overall sentiment, e.g., determining whether a review is positive or negative. Using movie reviews as data, we find that standard machine learning techniques definitively outperform human-produced baselines. However, the three machine learning methods we employed (Naive Bayes, maximum entropy classification, and support vector machines) do not perform as well .", 
+			"approved":"true" 
+		},
+		{
+			"id":"7","username": "alice", "bookname":"Grimm's Fairy Stories", 
+			"review":"The hostage situation is barely watchable, the mental torture the couple is put through is sickening, these psychologically sadistic murderers offer no true explanation for their actions, using mockery and cynical responses to mask the power trip they are on. They have no redeeming human features, and their cruel intent is played up for the cameras benefit, Paul even winks at th", 
+			"approved":"true" 
+		},
+		{
+			"id":"8","username": "alice", "bookname":"The Wizard of Oz", 
+			"review":". They have no redeeming human features, and their cruel intent is played up for the camera   s benefit, Paul even winks at the camera, as if the audience is in on this game they are playing. In one of the scenes, the camera is rewound when the audience is given the gratuitous pleasure in seeing one of the sadists killed, but even this is not granted to the audience when the scene is finally rewound", 
+			"approved":"true" 
+		},
+		{
+			"id":"9","username": "alice", "bookname":"The Frog Prince", 
+			"review":"What remains to be comprehended, is how a family trying to survive and hold onto to their dignity, can manage in the best way they can, as these misfits play games with them, pretending to give them choices in choosing their suffering, but always telling them that they will kill them before they leave. These thugs are complete fakes, even their names are fictitious, as they keep referring to themselves with different names, ", 
+			"approved":"true" 
+		},
+		{
+			"id":"10","username": "alice", "bookname":"Hercules", 
+			"review":"such as Tom and Jerry, Beavis and Butt-head. Paul calls Peter Fatty several times to the mock displeasure of Peter, Tom, Beavis, or whoever this obese, snide monster really is. Everything about these two is a facade, their phony stories of who they are and how they were brought up, their pretenses at politeness add up to zero for an audience that is left dismayed, realizing that it is only ", 
+			"approved":"true" 
+		},
+		{
+			"id":"11","username": "bob", "bookname":"Aladdin", 
+			"review":"at politeness add up to zero for an audience that is left dismayed, realizing that it is only their evil that is real in this film, despite the director   s aim to fictionalize the reality of this fictitious situation, to reduce everyone to a cartoon image, to make it appear that we can grow to expect violence as a natural part of life. That part doesn   t work as well as the director might think it does. ", 
+			"approved":"true" 
+		},
+		{
+			"id":"12","username": "bob", "bookname":"Cinderella", 
+			"review":"The family is real to the audience. Georg   s lack of courage and quiet in the face of danger, leaves him distraught, unable to face himself. Anna   s resolute behavior and her human foibles make us sympathize with her, even more so, even if we are not particularly enamored by the way she deports herself when she is in control of things    ", 
+			"approved":"true" 
+		},
+		{
+			"id":"13","username": "bob", "bookname":"Alice in Wonderland", 
+			"review":"I am left with the choice of how to rate the movie, knowing full well that the sophist argument is, if you don   t like what you are seeing, then don   t see the rest of it. That   s well and good. And if that is your philosophy on how to how to handle exploitive material, I can   t condemn you for it. I would think that many people of sound mind would feel this way and will walk out of the theater. ", 
+			"approved":"true" 
+		},
+		{
+			"id":"14","username": "bob", "bookname":"Adventures of Sherlock Holmes", 
+			"review":"But I don   t think, as the director thinks, in an interview he gave, that people who stay to see the entire movie, really need the movie. I don   t, necessarily, need this movie. I stayed to see if this sadistic film works its point of view out, and I was disappointed that with all its novelty and games and pretenses to high art, it offered nothing ", 
+			"approved":"true" 
+		},
+		{
+			"id":"15","username": "bob", "bookname":"Tarzan", 
+			"review":"much in the way of seeing things differently. The film is successful not because of its message, but because it is a well-crafted film, from a filmmaker who knows how to make films, even if he pretends to be doing more than he is capable of. This film succeeds with the small share of the audience it can garner, because it is, surprisingly enough, an entertaining ", 
+			"approved":"true" 
+		},
+		{
+			"id":"16","username": "bob", "bookname":"White Fang", 
+			"review":"film, and it broaches a subject that is very difficult to understand, that tweaks our interest in seeing if there is anything new to say about violence. And the hope is, that we might be able to understand violence a little bit better, even if, it has to come to us by way of an unorthodox position    and, that maybe, since violent films are so universally popular, we can", 
+			"approved":"true" 
+		},
+		{
+			"id":"17","username": "bob", "bookname":"Grimm's Fairy Stories", 
+			"review":"disappointed that with all its novelty and games and pretenses to high art, it offered nothing much in the way of seeing things differently. The film is successful not because of its message, but because it is a well-crafted film, from a filmmaker who knows how to make films, even if he pretends to be doing more than he is capable of. ", 
+			"approved":"true" 
+		},
+		{
+			"id":"18","username": "bob", "bookname":"The Wizard of Oz", 
+			"review":"Whether the story is entirely true or in some parts made up, as the director stated it is, is unimportant; the film covers the intriguing subject matter of how four single New Yorkers exist for a period of nine months, featuring the real lives of two female and two male actors who play themselves, concerned with getting older and still being single", 
+			"approved":"true" 
+		},
+		{
+			"id":"19","username": "bob", "bookname":"The Frog Prince", 
+			"review":"Whether the story is entirely true or in some parts made up, as the director stated it is, is unimportant; the film covers the intriguing subject matter of how four single New Yorkers exist for a period of nine months, featuring the real lives of two female and two male actors who play themselves, concerned with getting older and still being single", 
+			"approved":"true" 
+		},
+		{
+			"id":"20","username": "bob", "bookname":"Hercules", 
+			"review":". It is a film that highlights the problems that can be found in urban areas across America, as we bear witness to the plight of these singles trying to search for a mate through the internet and the personals, faced with agonizing loneliness and unresolved psychological problems", 
+			"approved":"true" 
+		},
+		{
+			"id":"21","username": "carl", "bookname":"Aladdin", 
+			"review":". It is a film that highlights the problems that can be found in urban areas across America, as we bear witness to the plight of these singles trying to search for a mate through the internet and the personals, faced with agonizing loneliness and unresolved psychological problems", 
+			"approved":"true" 
+		},
+		{
+			"id":"22","username": "carl", "bookname":"Cinderella", 
+			"review":". It is a film that highlights the problems that can be found in urban areas across America, as we bear witness to the plight of these singles trying to search for a mate through the internet and the personals, faced with agonizing loneliness and unresolved psychological problems", 
+			"approved":"true" 
+		},
+		{
+			"id":"23","username": "carl", "bookname":"Alice in Wonderland", 
+			"review":"Brenda Monte is Italian, she does not care for Jewish men and will not even consider dating them because she does not find them attractive, she is most proud of her big breasts, has a 20-year-old daughter from a previously failed marriage, and she tells us she receives no child support for her. This could be a personal ad about her", 
+			"approved":"true" 
+		},
+		{
+			"id":"24","username": "carl", "bookname":"Adventures of Sherlock Holmes", 
+			"review":"Michael De Stephano is the nicest one of the four, except this little negative fixation he has about homosexuals. It probably stems from his fear that people will think that he is queer because he is not married. He is a 40-year-old romantic, who is troubled that women find his diminuitive height to be a no-no for them", 
+			"approved":"true" 
+		},
+		{
+			"id":"25","username": "carl", "bookname":"Tarzan", 
+			"review":"We address the rating-inference problem, wherein rather than simply decide whether a review is thumbs up or thumbs down, as in previous sentiment analysis work, one must than to one star.", 
+			"approved":"true" 
+		},
+		{
+			"id":"26","username": "carl", "bookname":"White Fang", 
+			"review":"We address the rating-inference problem, wherein rather than simply decide whether a review is thumbs up or thumbs down, as in previous sentiment analysis work, one must than to one star.", 
+			"approved":"true" 
+		},
+		{
+			"id":"27","username": "carl", "bookname":"Grimm's Fairy Stories", 
+			"review":"Aimee Copp has the most serious problems of the four, she is obese, depressive, has lost hope, suffers from a poor image of herself, and desperately wants to get married. She relates these feelings to her lifetime childhood friend Laurie, who happens to be skinny, and is not faced with the tormenting dating problems her 28-year-old friend is having", 
+			"approved":"true" 
+		},
+		{
+			"id":"28","username": "carl", "bookname":"The Wizard of Oz", 
+			"review":"Mikey Russo is a braggart, who backs up his claims that he only goes out with beauties by showing snapshots of some of his previous dates. He is obnoxious but not as obnoxious as he makes himself out to be. Though it is very hard to feel sympathy for him, especially after he shows us how he will get out of a date with a mutt, which in his lingo,", 
+			"approved":"true" 
+		},
+		{
+			"id":"29","username": "carl", "bookname":"The Frog Prince", 
+			"review":". This 54-year-old failed screenwriter and current security director prides himself on being a gentleman, and makes no bones about the fact that he is a womanizer, and admits that he is his own worst enemy. All he wants in life is to take an attractive lady to bed", 
+			"approved":"true" 
+		},
+		{
+			"id":"30","username": "carl", "bookname":"Hercules", 
+			"review":"This film might be upsetting to some, but it is a fresh look at an old problem, and its aim is readily accomplished, as it offers us an unorthodox study in human behavior under the guise of being a documentary", 
+			"approved":"true" 
+		},
+				{
+			"id":"31","username": "dana", "bookname":"Aladdin", 
+			"review":"A brilliant, witty mock documentary of Jean Seberg, that puts words in her mouth that she might have approved of, but did not actually say, these are Mark Rappaport's words. Proving once again, that she is being exploited, though in a benevolent way, by a film that rails against her exploitation",
+			"approved":"true" 
+		},
+		{
+			"id":"32","username": "dana", "bookname":"Cinderella", 
+			"review":"Mary Beth Hurt is a perfect Jean Seberg, looking and sounding like her, exhibiting the easy way she talked, reflecting her small-town Midwestern Iowa roots. This journal (a journal that she never kept) takes us through her innocent years up to her suicide in 1979, when she was 40, and was resolved in the knowledge that she couldn   t be the somebody that she was ", 
+			"approved":"true" 
+		},
+		{
+			"id":"33","username": "dana", "bookname":"Alice in Wonderland", 
+			"review":"Rappaport interestingly explores the early film life of Vanessa Redgrave and Jane Fonda, who started out the same time she did and were roughly the same age, and were exploited as much as she was, but who survived to find their own identity and stardom. The difference between their success and her failure, he points out, is that these stars had a distinguished family name to see them through.", 
+			"approved":"true" 
+		},
+		{
+			"id":"34","username": "dana", "bookname":"Adventures of Sherlock Holmes", 
+			"review":"Her involvement with the Black Panthers shows that her motivation was to be of help to the downtrodden, to get the kids a better education and food in their belly, thinking that maybe violence was some kind of answer to the poverty and injustice she saw in the black community. By this time, her life had taken a downward turn, she was heavily into drinking and taking drugs, her judgment was certainly questionable", 
+			"approved":"true" 
+		},
+		{
+			"id":"35","username": "dana", "bookname":"Tarzan", 
+			"review":"Preminger, the egotist he was, answered the critics who panned her acting ability in Saint Joan, by giving her another starring part in one of his films, realizing that they did it with such glee, partly because they wanted him to fall on his face. But he wouldn   t admit he was wrong and immediately cast her in his next film, BONJOUR TRISTESSE.", 
+			"approved":"true" 
+		},
+		{
+			"id":"36","username": "dana", "bookname":"White Fang", 
+			"review":"She played the younger woman, in love with an older man. This is the film that the French critic and soon to be New Wave cinema icon, Jean-Luc-Godard, saw her in, and took her to Paris to play in the critically acclaimed BREATHLESS. She was to appear in many films afterward, but her best role might have been in a film few people saw or cared about, LILITH.", 
+			"approved":"true" 
+		},
+		{
+			"id":"37","username": "dana", "bookname":"Grimm's Fairy Stories", 
+			"review":"This film challenges our credibility, it offers a fascinating look at the world of make believe and the politics of the times, telling us secrets that may or may not be true. It also enlightens us that Seberg   s stare into the camera was basically a no-no for an actor to do at that time, but is now acceptable, making her a trend setter", 
+			"approved":"true" 
+		},
+		{
+			"id":"38","username": "dana", "bookname":"The Wizard of Oz", 
+			"review":"HAPPINESS is not a film about happiness, because happiness is not real but imagined, therefore no one can stay happy in a world where sadness is the more prevalent emotional state. So goes the theme of this dark comedy, meant to shock and antagonize you into looking at people you cannot readily identify with, in a film that features a pedophile rapist (Dylan). ", 
+			"approved":"true" 
+		},
+		{
+			"id":"39","username": "dana", "bookname":"The Frog Prince", 
+			"review":"This is an honestly made film that refuses to compromise on its plot or who should be cast in it (Solondz refused the studio  s offer to cast the pedophile with a noted star such as, William Hurt, because he felt Dylan was just right for the role). This film is meant for an art house type of audience, one that is able, as difficult as it may be, to see something in themselves in the characters portrayed on screen. ", 
+			"approved":"true" 
+		},
+		{
+			"id":"40","username": "dana", "bookname":"Hercules", 
+			"review":"I would wonder about anyone who could sit through this film and not be disturbed by it, that would just defeat its purpose. The audience I saw this film with, were mostly Williams College students and faculty, and they laughed openly and freely at the parts that had an edge to it, where Solondz was going for the laugh because he pushed the button as far as he wanted to go with a certain character and, in order to ", 
+			"approved":"true" 
+		},
+		
+						{
+			"id":"41","username": "earl", "bookname":"Aladdin", 
+			"review":"return to the intensely grim psychological mood of the story, he had to release some humorous energy or have the film drown in its own murky waters. The laughter was appropriate, and even  hip,  as it felt right to see this with an audience that still felt the need to be entertained when they go to the movies, and it didn  t seem to matter .",
+			"approved":"true" 
+		},
+		{
+			"id":"42","username": "earl", "bookname":"Cinderella", 
+			"review":"HAPPINESS is a difficult picture to watch, there are no good guys or gals. In order for it to work as a complete film, one has to accept the interrelated tales of three different types of sisters and their relationship with their miserable parents, Gazzara and Lasser, (who don  t love each other and are not happy whatever they do   he has given up on everything, ", 
+			"approved":"true" 
+		},
+		{
+			"id":"43","username": "earl", "bookname":"Alice in Wonderland", 
+			"review":"The sisters all suffer from ego-centredness, and it takes an audience with a modicum of sympathy for each of them to get past all the vices each of them has, as each one in this story only pretends to be interested in anyone but themselves", 
+			"approved":"true" 
+		},
+		{
+			"id":"44","username": "earl", "bookname":"Adventures of Sherlock Holmes", 
+			"review":"Jane Adams plays Joy, who is anything but joyous, as she cries through most of the film, having no luck at finding the right job or man. Trish (Cynthia) is the oldest and seemingly the most content, parroting all the facile virtues of middle America, living out the American dream with her three wonderful kids and successful psychologist husband (Dylan), who is gentle and understanding, but hides from her the fact that he is a pervert and a pedophile.", 
+			"approved":"true" 
+		},
+		{
+			"id":"45","username": "earl", "bookname":"Tarzan", 
+			"review":"Lara Flynn Boyle plays Helen, the successful author who can  t stand who she is, who is so full of herself, constantly harping to her sisters how she has been with so many good looking men and is never lonely but complains that she just has too much to do. She is, also, materially very well-off   and, condescending to her sisters", 
+			"approved":"true" 
+		},
+		{
+			"id":"46","username": "earl", "bookname":"White Fang", 
+			"review":"This illusion of her good life is shattered when an obscene caller, a nerdy computer guy, Hoffman, turns her on with one of his calls and she makes a date with him, even after he hangs up on her, but he is apparently afraid of her too willing response to his proposition, so their relationship fizzles out. By chance, he is also undergoing analysis with our shrink, Dylan, so you know what kind of help he is getting for his problems", 
+			"approved":"true" 
+		},
+		{
+			"id":"47","username": "earl", "bookname":"Grimm's Fairy Stories", 
+			"review":"The most poignant and unflinching scenes in the film are between the accused pedophile father and his son (Read), as Dylan, who is superb in his role, honestly counsels his 11-year-old son about masturbation, and later on, has the difficult task of telling his son that he drugged and raped his son  s friend and then raped one of his other friends and would do it again because he can  t control himself. ", 
+			"approved":"true" 
+		},
+		{
+			"id":"48","username": "earl", "bookname":"The Wizard of Oz", 
+			"review":". I could understand people being upset with this character, as this character is given a forum to tell us what he is about, and as difficult as it is to feel anything but contempt for him, we at least see what this type of person looks like up close and we can ascertain that he is human, no other film, to my knowledge, has done this so thoroughly", 
+			"approved":"true" 
+		},
+		{
+			"id":"49","username": "earl", "bookname":"The Frog Prince", 
+			"review":"This is a very solid film, that is well-acted, that is understandably not for everyone, yet because it takes risks on subjects that are tabu, and even though some of the risks seemed contrived and not a part of the natural story line, this is still a powerful film, one deserving of attention and intelligent critique, one deserving of thanks from those of us who welcome a true effort", 
+			"approved":"true" 
+		},
+		{
+			"id":"50","username": "earl", "bookname":"Hercules", 
+			"review":".This film leaves you little choice, you can take this film as morbid and amusing as it is, or you can ignore it, or you can find no one in it that you feel some sort of compassion for, and therefore come to hate it. I came close to loving it, while not exactly loving it, mainly because there were too many scenes in it that left me with mixed feelings and messages.", 
+			"approved":"true" 
+		},
+{
+		"id":"51","username": "fiona", "bookname":"Aladdin", 
+		"review":"On the morning of September , as Sunday School was in session at the Sixteenth Street Baptist Church in Birmingham, Alabama, an explosion rang out. Long time racially-motivated bomber Robert  Dynamite Bob  Chambliss and a band of his followers had planted a bomb in that church with the intent of inflicting maximum damage.The civil rights marches were in full-swing in the south and so were the counterinsurgents. These mad bombers that day killed Addie Mae Collins (14), Carol Denise McNair (11), Cynthia Wesley (14) and Carole Rosamond Robertson (14). While Spike Lee was still in film school, he began to plan a movie about the bombing.",
+		"approved":"true" 
+		},
+		
+		{
+		"id":"52","username": "fiona", "bookname":"Cinderella", 
+		"review":"Over a decade later, he has finally been able to deliver on his dream with a documentary, which he calls simply 4 LITTLE GIRLS, to tell the tragedy of those children's early death.Spike Lee's publicist sent me an unsolicited press video with the goal of fostering knowledge of the film and building demand that it be shown more widely than it has been those far. Even though it has gotten rave reviews, it has only played in 9 major markets in the United States, missing the Silicon Valley and many other regions of the country", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"53","username": "fiona", "bookname":"Alice in Wonderland", 
+		"review":"All of the revenue earned from the theatrical release of the film is being donated to a memorial fund for the four girls.From Spike Lees very first movie, SHES GOTTA HAVE IT, he has demonstrated fresh and interesting approaches to standard material. Although his DO THE RIGHT THING, for which he won an Academy Award for the writing, is arguably his best known film, his picture MALCOLM X,", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"54","username": "fiona", "bookname":"Adventures of Sherlock Holmes", 
+		"review":"staring Denzel Washington, remains my personal favorite. Spike Lee's first documentary, 4 LITTLE GIRLS, certainly ranks among his best films.At the time of the bombing Birmingham was a steel town with a long history of labor violence. In one part of the historic film footage in the movie the Rev. ", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"55","username": "fiona", "bookname":"Tarzan", 
+		"review":"In contemporary interviews with African-Americans they express doubts that Wallace ever believed his racist rhetoric. They said he was the nicest person you  d ever want to meet until the cameras were turned on him, and then his inflammatory rhetoric was an expedient.Starting small but expanding rapidly, the civil rights protests in Birmingham grew into something that threatened the white power structure. !", 
+		"approved":"true" 
+		},
+		
+		
+		{
+		"id":"56","username": "fiona", "bookname":"White Fang", 
+		"review":"The film would have been better served with more details of the trial, particularly the investigation leading up to it. Also, too much footage is devoted to names like Bill Cosby and Ozzie Davis who show up mainly to add star power to the picture. These, however, are minor quibbles.", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"57","username": "fiona", "bookname":"Grimm's Fairy Stories", 
+		"review":"Lee  s powerful film works best in the stock footage from the past for no words can adequately describe what happened then. From images as simple as two drinking fountains, one labeled white and one labeled colored, to ones as dramatic as a church in rubbles, the film shocks the viewers with their country  s own history.", 
+		"approved":"true" 
+		},
+		{
+		"id":"58","username": "fiona", "bookname":"The Wizard of Oz",
+		"review":"I say segregation now, segregation tomorrow and segregation forever!  were the notorious words said by Governor George Wallace in his inauguration address that year. From that scandalous scene, Lee cuts to today where an invalid Wallace points to a black man named Al who he says is his best friend and who travels with him all over the globe. Wallace claims that when he was governor he provided free textbooks for black students", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"59","username": "fiona", "bookname":"The Frog Prince", 
+		"review":"In a show full of all the incidents of childhood that happen only in the movies, a typical one has a 4th grader rescued by firemen after he sticks his tongue to a frozen telephone pole. After a triple-dog dare, he is, of course, obligated by the strict code of childhood ethics to inflict certain damage to his body.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"60","username": "fiona", "bookname":"Hercules", 
+		"review":"Director Bob Clark s 1983 film, A CHRISTMAS STORY, tries to be Cute with a capital C. Set in the 1940s, it is told almost exclusively in voice-over. As the grown Ralphie, Jean Shepherd speaks through heavy narration about the Christmas Ralphie was 9-years-old.!", 
+		"approved":"true" 
+		},
+		
+		
+		{
+		"id":"61","username": "goerge", "bookname":"Aladdin", 
+		"review":"The story is nominally about Ralphie s quest to get an air rifle for Christmas and not just any air rifle -- a genuine Red Ryder. The gun quest serves as a glue to hold together a rag-tag collection of childhood incidents. Ralph, a preppie-dressed kid played by Peter Billingsley, seems chosen for his cloying behavior.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"62","username": "goerge", "bookname":"Cinderella", 
+		"review":"As the old man, Darren McGavin plays a quirky dreamer and would-be record setting handyman. He becomes ecstatic when he wins a contest and gets the world s gaudiest and most hideous lamp, a single, long nyloned leg with a stiletto heel base and topped with a cheap shade. He puts his treasure in the front window for all his neighbors to admire. His wife (Melinda Dillon) is so embarrassed that she devises a plan to get rid of the monstrosity.", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"63","username": "goerge", "bookname":"Alice in Wonderland", 
+		"review":"Every family has a kid who won t eat,    Ralphie tells the audience.    My kid brother had not eaten voluntarily in over 4 years.    To get nourishment in him, his mothers tricks him with games like    Show me how the piggies eat.    Sticking his head in his plate, Ralphie s little brother grunts away as he spreads the potatoes all over his face in a cliche of a disastrously messy kid.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"64","username": "goerge", "bookname":"Adventures of Sherlock Holmes", 
+		"review":"Most of the show s episodes are heavily outlandish. Some do work with one of the best being a daydream sequence in class that occurs when Ralphie turns in his big essay on what he wants for Christmas. He imagines that his teacher and his classmates are so impressed that the students carry him around the room on their shoulders like a conquering hero. He is so taken with this fantasy that his teacher has trouble bringing him back to reality.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"65","username": "goerge", "bookname":"Tarzan", 
+		"review":"When one day, Ralphie accidentally blurts out the F-word (we don t actually hear him say it), he is sure that it is the guillotine for him or worse. His punishment turns out to be the milder and more traditional bar of soap in the mouth.!", 
+		"approved":"true" 
+		},
+		
+		
+		{
+		"id":"66","username": "goerge", "bookname":"White Fang", 
+		"review":"Every adult in the picture, even the department store Santa Claus pooh-poohs Ralphie s gun wish with,    You ll shoot your eye out.    Will he get the gun, and if he does, will he indeed shoot his eye out? Stay tuned.All of the story s characters are too quirky. Their dialog is sometimes funny but the script s lack of subtlety and effective wit makes for an increasingly tiring experience. !", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"67","username": "goerge", "bookname":"Grimm's Fairy Stories", 
+		"review":"Roald Dahl could have turned this material into another of his sardonic masterpieces, but the movie s writing committee of Leigh Brown, Bob Clark and Jean Shepherd simply do not have anything approaching Dahl s talents.!", 
+		"approved":"true" 
+		},
+		{
+		"id":"68","username": "goerge", "bookname":"The Wizard of Oz",
+		"review":"In its simplicity this predictable picture, for all its faults, does possess an undeniable charm underneath. If they could have just gotten Dahl to write the script A CHRISTMAS STORY runs 1:34. It is rated PG for a few mildly profane words. The film is fine for all ages.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"69","username": "goerge", "bookname":"The Frog Prince", 
+		"review":"TITANTIC, writer and director James Cameron  s much anticipated and sometimes ridiculed $200,000,000 epic, arrives shortly into the theaters so the question naturally arises, whether the film is worth it? As a business proposition, it seems hard to see how it can ever break even, but as a movie it is nothing short of wonderful.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"70","username": "goerge", "bookname":"Hercules", 
+		"review":"If you  ve already neatly categorized it as yet another disaster movie a la VOLCANO or THE POSEIDON ADVENTURE, think again. The movie is both a great love story told with the disaster as a backdrop and a portrayal of one of the world  s most memorable disasters made real and personal by seeing it through the eyes of two young lovers. In either case, it is filmmaking at its best.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"71","username": "hana", "bookname":"Aladdin", 
+		"review":"When we entered the press screening, my wife asked the publicity rep if there would be an intermission since the film runs three and a quarter hours long. He said no but that the time would go by so fast she  d never notice the length. Amazingly, he was right. TITANIC is one of the few long films that doesn  t suffer because of it.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"72","username": "hana", "bookname":"Cinderella", 
+		"review":"intresting and The lush picture, filmed by Russell Carpenter in 70mm, opens in the present with two diving subs exploring the wreck of the Titanic on the bottom of the ocean. Fortune hunter Brock Lovett (Bill Paxton) leads the expedition looking for the world  s most valuable diamond necklace that went down with the ship, known back then as  the ship of dreams.  The necklace  s hundred-year-old former owner, Rose DeWitt Bukater (Gloria Stuart), finds Brock to tell him her story.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"73","username": "hana", "bookname":"Alice in Wonderland", 
+		"review":"Although almost all of the movie happens in flashback, one of the engineers shows the elderly Rose exactly how the ship was sunk. Using a computer simulation, the movie takes the time to explain what will happen later, which adds immensely to making a lucid story out of what would have otherwise been hopelessly confusing.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"74","username": "hana", "bookname":"Adventures of Sherlock Holmes", 
+		"review":"After twenty minutes, the story makes its jump to the past as the Titanic leaves on her maiden voyage. In a classic movie theme, the two parts of the ship, first class and steerage (third-class) exist in sharp contrast. The strength of the script is the way it paints the differences between rich and poor without excessive moralizing.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"75","username": "hana", "bookname":"Tarzan", 
+		"review":"Entering the ship on its day out is Rose along with her millionaire fiance, Cal Hockley, played with perfect snobbishness by Billy Zane. And thanks to a last minute winning poker hand, an itinerant artist named Jack Dawson gets himself into a little shared cabin in third class. Even with her own promenade deck, Rose feels trapped on the ship, what with an upcoming marriage to a man she loathes. In contrast, Jack can barely contain his euphoria at being on board.!", 
+		"approved":"true" 
+		},
+		
+		
+		{
+		"id":"76","username": "hana", "bookname":"White Fang", 
+		"review":"After Jack saves Rose from committing suicide, they start a brief but impassioned love affair. Never tawdry and rarely explicit, their romance has the power to sweep the audience into the story. Leonardo DiCaprio in his best performance ever plays Jack with confidence and charisma. In so many ways, small and large, he makes all the right decisions in his approach to the part. When he confronts Cal, for example, he remains composed and polite and yet subtly undermines every one of Cal  s supercilious put-downs.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"77","username": "hana", "bookname":"Grimm's Fairy Stories", 
+		"review":"Kate Winslet gives a wonderfully captivating performance as young Rose. The chemistry between these two Academy Award nominees, him for WHAT  S EATING GILBERT GRAPE and her for SENSE AND SENSIBILITY, is nothing short of astonishing. From the scene where he embarrasses her by repeatedly asking if she loves her finace to the beautiful one of them hanging off the ship  s bow to the one where she embarrasses him by asking him to paint her nude!", 
+		"approved":"true" 
+		},
+		{
+		"id":"78","username": "hana", "bookname":"The Wizard of Oz",
+		"review":", they dazzle the screen with a pair of mesmerizing performances. If the film breaks after an hour and a half, which is how long Cameron wisely waits to have the iceberg show up, you will still get one of the best films of the year.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"79","username": "hana", "bookname":"The Frog Prince", 
+		"review":"Peter Lamont  s sets are more than authentic. One scene, for example, starts with the planning-to-retire captain, played with insouciance by Bernard Hill, having his tea on deck. It then shifts to the ship  s massive gears and then to the bright-hot boiler room filled with sweating muscular men shoveling in the coals. The handsome interior common rooms of the ship resemble a palace more than an ocean liner.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"80","username": "hana", "bookname":"Hercules", 
+		"review":"Easily the most fascinating part of the story is what happens after the iceberg hits and before the battle with the water begins in earnest. At first, since the iceberg tears a series of little gashes in the hull, not some big gaping hole, the passengers view the hit as more of curiosity than anything else. What a lark. We  ve struck an iceberg. Now let  s get back to our brandy and cigars.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"81","username": "israel", "bookname":"Aladdin", 
+		"review":"The ship  s musicians play like troopers through it all, even after the panic sets in. After all, they see it as their duty to calm the passengers. When the musicians are about to die, they politely thank each other for the pleasure of being able to play together, and they mean it. Their civility borders on insanity, but it is touching nevertheless.The story is so rich that my description has merely touched the surface. There are more than enough characters to love and to hate!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"82","username": "israel", "bookname":"Cinderella", 
+		"review":"Special effects work best when their presence becomes almost undetectable. In TITANIC, for which he created a nine-tenths scale model of the entire ship, Cameron strove for accuracy at all costs. The most dramatic moment in the film happens when the ship breaks in two, and the front section becomes vertical in the water. People are flung like ants either into the water to be shortly frozen to death or into other parts of the ship to be crushed immediately and nice!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"83","username": "israel", "bookname":"Alice in Wonderland", 
+		"review":"Besides being romantic and dramatic, the script includes liberal doses of humor. From the many deliciously subtle verbal put-downs to the physical comedy, as when Jack teaches Rose to spit like a man, the show elicits laughter in addition to perhaps a few tears. It  s good-bye for a little while!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"84","username": "israel", "bookname":"Adventures of Sherlock Holmes", 
+		"review":"his little girl since it was indeed women and children first.  This boat  s for mommies and children. There  ll be a boat in a little while for daddies.  Basically there was a design decision to have fewer than half of the necessary life boats -- it made the decks look too crowded otherwise.Perhaps the sinking is best summarized by one of the Guggenheim  s on-board the ship.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"85","username": "israel", "bookname":"Tarzan", 
+		"review":"In the dining room with the lifeboats gone and the ship certain to sink, he is offered a life jacket by one of the crew.  No thanks,  the elegantly attired Guggenheim replies.  We  re dressed in our best and would prefer to go down like gentlemen. But we would like a brandy. TITANIC runs 3:14. !", 
+		"approved":"true" 
+		},
+		
+		
+		{
+		"id":"86","username": "israel", "bookname":"White Fang", 
+		"review":"  We need a theme, a song, some visuals,   presidential spin doctor Conrad Brean explains, pitching his big project to Hollywood movie producer Stanley Motss.   It  s a pageant. It  s like the Oscars. That  s why we need you. !", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"87","username": "israel", "bookname":"Grimm's Fairy Stories", 
+		"review":"It  s eleven days before the election and with the breaking revelation that the president had molested a Firefly girl in the White House, Conrad needs something to keep that story from making the front pages. Fast thinking Conrad knows just what they need, a small, cost-effective war, which he euphemistically refers to as a pageant. !", 
+		"approved":"true" 
+		},
+		{
+		"id":"88","username": "israel", "bookname":"The Wizard of Oz",
+		"review":"., he comes up with the relatively obscure Albania as the perfect villain. Not wanting to actually fight there, he has Stanley produce a war image on a stage set. The American public will never be the wiser, and the president will be elected with patriotic fervor rather booted out as morally bankrupt.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"89","username": "israel", "bookname":"The Frog Prince", 
+		"review":"Normally dramatic film director Barry Levinson, whose body of work includes DINER, RAIN MAN, and SLEEPERS, delivers another hit in WAG THE DOG, but this time it is a black comedy. The exceedingly bright and biting script by Hilary Henkin and the great David Mamet will remind you of one current event after another. Even in the most ridiculous parts of the story, one  s reaction is likely to be a double-take!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"90","username": "israel", "bookname":"Hercules", 
+		"review":"As Conrad Brean, Robert De Niro has a wry smile for every hardship in the campaign. He  s seen it all and can confuse the media faster than he can say that we are not sending B-3 bombers to Albania. Leak the story about the non-existent plane and then deny it, deny it, deny it. Now, that will certainly flummox the press and get the sexual misconduct story buried on page 12.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"91","username": "jony", "bookname":"Aladdin", 
+		"review":"In my favorite performance in the movie, Anne Heche plays top presidential aide Winifred Ames. Normally in command, Winifred does not know what to make of Conrad, who takes control of everything. One minute she tries to be tough, but the next she is looking wide-eyed at Conrad  s latest outlandish idea. She always goes along!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"92","username": "jony", "bookname":"Cinderella", 
+		"review":"H. Macy appears in a small part as a CIA agent. When trapped, she  s willing to blame everyone and plead for mercy.The best sequence in the movie concerns the construction of the war video to show on CNN and the other news networks. First they hire the right young actress, played by a distraught looking Kirsten Dunst and nice!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"93","username": "jony", "bookname":"Alice in Wonderland", 
+		"review":"from her bomb ravaged village in Albania. Filled on a stage against a blue background, they carefully choose the right hamlet for the backdrop, pick the right flames and sounds and, in the piece de resistance, figure out the right pet for her to be clutching. The animal was to have been filmed live, but something came up so Stanley gives her a large bag of Tostitos to hold instead. !", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"94","username": "jony", "bookname":"Adventures of Sherlock Holmes", 
+		"review":"They  ll scan in a cat in post-production. The president, who is never seen, calls on the cell phone to insist that they use a white cat. This infuriates Stanley, who hates it when his backers get in the way of his creative decisions.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"95","username": "jony", "bookname":"Tarzan", 
+		"review":"Many other good actors show up as well in the film with Woody Harrelson having an eye-opening small part, which cannot be described without giving too much away.The main problem with the movie is that it is so hilarious that you may have to see it twice to hear all the funny lines. The audience at our screening could barely control themselves", 
+		"approved":"true" 
+		},
+		
+		
+		{
+		"id":"96","username": "jony", "bookname":"White Fang", 
+		"review":"The opening credits answer the question you have about why the movie is called WAG THE DOG:   Why does a dog wag its tail? Because the dog is smarter than the tail. If the tail were smarter, it would wag the dog.   And this marvelously funny film wags the audience until they leave the theater limp from one belly laugh after another.!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"97","username": "jony", "bookname":"Grimm's Fairy Stories", 
+		"review":"When the stars of a movie series are dropped from the latest installment, one has to wonder whether the concept can survive. Could ALIEN: RESURRECTION have been successful if science and creative script writing could not have brought Sigourney Weaver back from the dead? Could you imagine a DIE HARD series without !", 
+		"approved":"true" 
+		},
+		{
+		"id":"98","username": "jony", "bookname":"The Wizard of Oz",
+		"review":"and John Heard) and the villains (Joe Pesci and Daniel Stern). The common thread between the three HOME ALONE films is the prolific writer and producer John Hughes of FLUBBER, FERRIS BUELLER'S DAY OFF, and numerous other kids' movies. There is only one other common element. The handsome cinematography on all three HOME ALONE movies comes from the lens of the talented Julio Macat!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"99","username": "jony", "bookname":"The Frog Prince", 
+		"review":"HOME ALONE 3 is tailor-made for younger audiences that find comic mayhem so funny. With cute Alex D. Linz, who was so sweet last Christmas in ONE FINE DAY, playing the lead, Alex Pruitt, it is easy for the kids to identify with the show's hero. (One minor quibble. The boys we took talked during the show only once when Alex claimed to be 8, which is about their ages.   He's not 8!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"100","username": "jony", "bookname":"Hercules", 
+		"review":"Although not at all like the real McCoy, it is still an impressive piece of real estate. From there spies, played by Rya Kihlstedt, Olek Krupa, David Thornton and Lenny von Dohlen, steal a single military chip so powerful that the entire Southeast Asian region can be controlled with it. They hide the chip in a remote control car which -- you guessed it -- ends up by mistake with little Alex!", 
+		"approved":"true" 
+		},
+		
+		{
+		"id":"101","username": "Mor", "bookname":"The Wizard of Oz",
+		"review":"and John Heard) and the villains (Joe Pesci and Daniel Stern). The common thread between the three HOME ALONE films is the prolific writer and producer John Hughes of FLUBBER, FERRIS BUELLER'S DAY OFF, and numerous other kids' movies. There is only one other common element. The handsome cinematography on all three HOME ALONE movies comes from the lens of the talented Julio Macat!", 
+		"approved":"false" 
+		},
+		
+		{
+		"id":"102","username": "Mor", "bookname":"The Frog Prince", 
+		"review":"HOME ALONE 3 is tailor-made for younger audiences that find comic mayhem so funny. With cute Alex D. Linz, who was so sweet last Christmas in ONE FINE DAY, playing the lead, Alex Pruitt, it is easy for the kids to identify with the show's hero. (One minor quibble. The boys we took talked during the show only once when Alex claimed to be 8, which is about their ages.   He's not 8!", 
+		"approved":"false" 
+		},
+		
+		{
+		"id":"103","username": "Mor", "bookname":"Hercules", 
+		"review":"it is still an impressive piece of real estate. From there spies, played by Rya Kihlstedt, Olek Krupa, David Thornton and Lenny von Dohlen, steal a single military chip so powerful that the entire Southeast Asian region can be controlled with it. They hide the chip in a remote control car which -- you guessed it -- ends up by mistake with little Alex!", 
+		"approved":"false" 
+		}
+]
+

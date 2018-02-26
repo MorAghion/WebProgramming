@@ -1,0 +1,119 @@
+[
+			{		
+				"name": "Adventures of Sherlock Holmes", 
+				"price": "10$", 
+				"description": "Detective Sherlock Holmes and his stalwart partner Watson engage in a battle of wits and brawn with a nemesis whose plot is a threat to all of England.",
+				"likes": "2",
+				"photo": "sherlock.jpg",
+                "link": "books_html/Adventures_of_Sherlock_Holmes.html",
+                "likedBy": "israel,jony",
+                "purchasedBy": "alice,bob,carl,dana,earl,fiona,goerge,hana,israel,jony",
+               	"ageRange":"3"
+			},
+			{		
+				"name": "Aladdin", 
+				"price": "10$", 
+				"description": "Aladdin is a street urchin who lives in a large and busy town long ago with his faithful monkey friend Abu. When Princess Jasmine gets tired of being forced to remain in the palace that overlooks the city, she sneaks out to the marketplace, where she accidentally meets Aladdin.",
+				"likes": "2",
+				"photo": "aladin.jpg",
+                "link": "books_html/Aladdin.html",
+               	"likedBy": "alice,bob",
+               	"purchasedBy": "alice,bob,carl,dana,earl,fiona,goerge,hana,israel,jony",
+               	"ageRange":"2"
+
+			},
+			{		
+				"name": "Alice in Wonderland", 
+				"price": "7$", 
+				"description": "It tells of a girl named Alice falling through a rabbit hole into a fantasy world populated by peculiar, anthropomorphic creatures.",
+				"likes": "4",
+				"photo": "alice.jpg",
+                "link": "books_html/Alice's_Adventures_in_Wonderland.html",
+                "likedBy": "alice,bob,carl,dana",
+                "purchasedBy": "alice,bob,carl,dana,earl,fiona,goerge,hana,israel,jony",
+               	"ageRange":"1"
+			},
+			{		
+				"name": "Cinderella", 
+				"price": "15$", 
+				"description": "When her father unexpectedly passes away, young Ella finds herself at the mercy of her cruel stepmother and her scheming step-sisters. Never one to give up hope, Ella's fortunes begin to change after meeting a dashing stranger.",
+				"likes": "5",
+				"photo": "cinderella.jpg",
+                "link": "books_html/Cinderella.html",
+                "likedBy": "earl,fiona,goerge,hana,israel",
+                "purchasedBy": "alice,bob,carl,dana,earl,fiona,goerge,hana,israel,jony",
+               	"ageRange":"3"
+            
+			},
+			{		
+				"name": "Grimm's Fairy Stories", 
+				"price": "13$", 
+				"description": "Children's and Household Tales is a collection of fairy tales first published in 20 December 1812 by the Grimm brothers, Jacob and Wilhelm.",
+				"likes": "4",
+				"photo": "grimm.jpg",
+                "link": "books_html/Grimm's_Fairy_Stories.html",
+                "likedBy": "bob,carl,goerge,hana",
+                "purchasedBy": "alice,bob,carl,dana,earl,fiona,goerge,hana,israel,jony",
+               	"ageRange":"3"
+			},
+			{		
+				"name": "Hercules", 
+				"price": "13$", 
+				"description": "The son of the Greek Gods Zeus and Hera is stripped of his immortality as an infant and must become a true hero in order to reclaim it.",
+				"likes": "4",
+				"photo": "hercules.jpg",
+                "link": "books_html/Hercules.html",
+                "likedBy": "alice,earl,fiona,goerge",
+                "purchasedBy": "alice,bob,carl,dana,earl,fiona,goerge,hana,israel,jony,Mor",
+               	"ageRange":"3"
+			},
+			{		
+				"name": "Tarzan", 
+				"price": "12$", 
+				"description": "A man raised by gorillas must decide where he really belongs when he discovers he is a human.",
+				"likes": "4",
+				"photo": "tarzan.jpg",
+                "link": "books_html/Tarzan.html",
+                "likedBy": "alice,dana,earl,israel",
+                "purchasedBy": "alice,bob,carl,dana,earl,fiona,goerge,hana,israel,jony",
+               	"ageRange":"1"
+                
+			},
+			{		
+				"name": "The Wizard of Oz", 
+				"price": "13$", 
+				"description": "Dorothy Gale is swept away from a farm in Kansas to a magical land of Oz in a tornado and embarks on a quest with her new friends to see the Wizard who can help her return home in Kansas and help her friends as well.",
+				"likes": "5",
+				"photo": "The-Wizard-Of-Oz.jpg",
+                "link": "books_html/Wizard_of_Oz.html",
+                "likedBy": "carl,fiona,goerge,hana,jony",
+                "purchasedBy": "alice,bob,carl,dana,earl,fiona,goerge,hana,israel,jony,Mor",
+               	"ageRange":"2"
+               	
+			},
+			
+			{		
+				"name": "The Frog Prince", 
+				"price": "13$", 
+				"description": "A young girl learns how to be a good friend and princess with the help of a tall frog.",
+				"likes": "2",
+				"photo": "frog.jpg",
+                "link": "books_html/The_Frog_Prince.html",
+                "likedBy": "hana,israel",
+                "purchasedBy": "alice,bob,carl,dana,earl,fiona,goerge,hana,israel,jony,Mor",
+               	"ageRange":"1"
+               	
+			},
+			{		
+				"name": "White Fang", 
+				"price": "13$", 
+				"description": "Based on the timeless novel by Jack London, White Fang follows the story of a boy who befriends a half breed wolf as he searches for his father, who has mysteriously gone missing during the Gold Rush.",
+				"likes": "6",
+				"photo": "white -fang.jpg",
+                "link": "books_html/White_Fang.html",
+                "likedBy": "bob,carl,dana,earl,fiona,goerge",
+                "purchasedBy": "alice,bob,carl,dana,earl,fiona,goerge,hana,israel,jony",
+               	"ageRange":"2"
+			}	
+
+]

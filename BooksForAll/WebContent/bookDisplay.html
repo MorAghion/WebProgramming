@@ -1,0 +1,350 @@
+<!--This page displays a certain book that a user or an admin chose.-->
+<!--The information displayed to all users: Book name, photo, description price, likes, list of likers and reviews-->
+<!--If user is registered, "read the book" button and "add review" button are displayed too-->
+<!--If the user is not registered, "purchase" button is displayed only-->
+<!--If the user is admin, no buttons are displayed. Admin can also use his "likes"tooltip to go to a user's profile-->
+
+<div ng-controller="bookDisplayController">
+	<div class="container book-display">
+		<div class="row" id="rowBookDisplay">
+
+			<!--information that all users can see-->
+			<div class="col-sm-4">
+				<img ng-src={{bookName[0].photo}} alt="bookCover" class="image"
+					width=25% />
+			</div>
+			<div class="col-xs-8">
+				<p id="bookDispHeader">{{bookName[0].name}}</p>
+				<p id="bookDispText">{{bookName[0].description}}</p>
+			</div>
+
+			<div class="col-xs-8">
+<!--information that only admin can see, using "ng-show" to bind the proper boolean veriable from "login controller"-->
+				<div ng-show="isAdmin">
+
+					<p id="bookDispPrice">
+						<span id="price">price: {{ bookName[0].price }} </span> &nbsp
+						&nbsp likes: <span id="bookDispPrice">{{ bookName[0].likes
+							}}</span>
+						<button class="glyphicon glyphicon-heart dropdown dropmenu"
+							id="adminLikes">
+							<div class="dropdown-content" id="drop-list">
+								<a href="#" ng-repeat="liker in Linklikers"
+									ng-click="LinkToUser(liker)">{{liker}}</a>
+							</div>
+						</button>
+				</div>
+
+<!--information that only users can see, using "ng-hide" to bind the proper boolean veriable from "login controller"-->
+				<div ng-hide="isAdmin">
+					<div>
+						<hr>
+						<p id="bookDispPrice">
+							<span id="price">price: {{ bookName[0].price }} </span> &nbsp
+							&nbsp likes:
+							<!--If the user didn't like the book, using ng-hide we show her the proper number of likes-->
+							<span id="bookDispPrice" ng-hide="likeToDB"> {{
+								bookName[0].likes }}</span>
+
+<!--If the user did like the book, using ng-show we show her the proper number of likes-->
+							<span id="bookDispPrice" ng-show="likeToDB">{{
+								bookName[0].likes }}</span>
+
+<!--If the user purchased the book, using ng-hide we hide the "purchase" button. 
+	using "ng-show" we show the "like" button with it's proper color, depending weather the user liked it or not -->
+							<span ng-hide="showPurchaseBtn"> <span
+								ng-show="colortored" ng-model="likers">
+									<button id="likesRed" class="glyphicon glyphicon-heart"
+										aria-hidden="true" ng-click="like()" data-toggle="tooltip"
+										title="{{likers}}"></button>
+							</span> <span ng-show="colortoblack" ng-model="likers">
+									<button id="likesBlack" class="glyphicon glyphicon-heart"
+										aria-hidden="true" ng-click="like()" data-toggle="tooltip"
+										title="{{likers}}"></button>
+							</span>
+							</span>
+
+<!--If the user didn't purchase the book, using ng-show and binding from controller, we show the user the "like" button colored black, as for she cannot like the book-->
+							<span ng-show="showPurchaseBtn"> <span
+								ng-show="colortoblack" ng-model="likers"> <span
+									id="likesBlack" class="glyphicon glyphicon-heart"
+									aria-hidden="true" data-toggle="tooltip" title="{{likers}}"></span>
+							</span>
+							</span>
+
+
+
+						</p>
+
+<!--If the user didn't purchase the book, using ng-show and binding from controller, we show the user the "purchase" button, 
+	and using ng-hide we hide the "read the book" and "add review" buttons, as she cannot read or add revew for a book she didnt purchased-->
+						<p id="bookDispBtn">
+							<span ng-show="showPurchaseBtn">
+								<button type="button" class="btn btn-primary" id="bookDispBtn"
+									data-toggle="modal" data-target="#exampleModal">Purchase</button>
+							</span> <span ng-show="showBookLnk">
+								<button type="button" class="btn btn-warning"
+									data-toggle="modal" data-target="#readingModal"
+									id="bookDispBtn">Read the book!</button>
+
+							</span> <span ng-hide="showPurchaseBtn">
+								<button type="button" class="btn btn-info btn-md"
+									id="bookDispBtn" data-target="#myModal" ng-click="addReview()">Add
+									A Review</button>
+							</span>
+						</p>
+					</div>
+					<hr>
+
+<!-- ---------------------------------------------------------READING SECTION------------------------------------------------------->
+<!-- this modal offers the user to start reading her book from the start or from the last page she ahs read -->
+
+					<div class="modal fade" id="readingModal" tabindex="-1"
+						role="dialog" aria-labelledby="readingModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"
+										aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<h4 class="modal-title" id="readingModalLabel">Read your
+										book</h4>
+								</div>
+								<!--modal body-->
+								<div class="modal-body">Where would you like to start
+									reading from?</div>
+								<div class="modal-footer">
+									<div class="form-actions ">
+										<button type="button" class="btn btn-primary"
+											data-dismiss="modal" ng-click="howToRead('start')">The
+											Start</button>
+										<button type="button" class="btn btn-primary"
+											data-dismiss="modal" ng-click="howToRead('page')">The
+											last page I have read</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+<!-- ---------------------------------------------------------------------PAYMENT SECTION-------------------------------------------------------------------- -->
+<!--PAYMENT MODAL. invoked by clicking "purchase book" button-->
+<!--modal header. User have to choose a payment methos using radio buttons. 
+this info will be bind to the controller using "payMethod()" function-->
+
+					<div class="modal fade" id="exampleModal" tabindex="-1"
+						role="dialog" aria-labelledby="exampleModalLabel"
+						aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content" >
+								<button type="button" class="close" data-dismiss="modal"
+									aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<div class="modal-header">
+									<div class="container" id="paymentContainer">
+										<div id="paymentRow">
+											<div class="headingWrap">
+												<h5 class="headingTop text-left">Select Your Payment
+													Method</h5>
+											</div>
+
+											<div id="myPaymentRow">
+												<input type="radio" name="card" value="visa"
+													ng-click="payMethod('visa')" checked> Visa &nbsp
+												&nbsp <input type="radio" name="card" value="amex"
+													ng-click="payMethod('amex')"> Amex<br> <img
+													id="cardPic" src="./img/visa.png"> <img id="cardPic"
+													src="./img/amx.png"><br>
+												<br>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+<!--modal body, all fields are required. These details will be bind to the controller using "ng-model"-->
+
+								<div class="modal-body">
+									<div class="container">
+										<div class="col-xs-12 col-md-4 ">
+											<h3>Payment Details</h3>
+											<label> Card Number</label>
+											<div class="input-group">
+												<div ng-show="visa" ng-hide="amex">
+													<input type="text" class="form-control" maxlength="16"
+														placeholder="Card Number" ng-change="checkCardvisa() "
+														ng-model="visanum" required autofocus />
+												</div>
+
+												<div ng-show="amex" ng-hide="visa">
+													<input type="text" class="form-control" maxlength="15"
+														placeholder="Card Number" ng-change="checkCardamex() "
+														ng-model="amexnum" required autofocus />
+												</div>
+												<label>Card Holder Name</label> <input type="text"
+													class="form-control" maxlength="15"
+													placeholder="Card Holder Name" ng-change="checkOwner() "
+													ng-model="owner" required autofocus />
+											</div>
+											<div class="row">
+												<div class="col-xs-7 col-md-7">
+													<div class="form-group">
+														<label>Insert Expiry Date</label>
+														<div class="col-xs-6 col-lg-6 ">
+															<input type="text" class="form-control" maxlength="2"
+																id="expiryMonth" placeholder="MM" required
+																ng-change="checkExpiry() " ng-model="month" />
+														</div>
+														<div class="col-xs-6 col-lg-6 ">
+															<input type="text" class="form-control" maxlength="2"
+																id="expiryMonth" placeholder="YY" required
+																ng-change="checkExpiry() " ng-model="year" />
+														</div>
+													</div>
+												</div>
+
+												<div class="col-xs-5 col-md-5 pull-right">
+													<div class="form-group">
+														<label>CVV</label> <input type="password"
+															class="form-control" maxlength="3" id="cvCode"
+															placeholder="CVV" required ng-change="checkCvv() "
+															ng-model="cvv" />
+													</div>
+												</div>
+											</div>
+											<!--Error messages that are displayed in real-time to the user-->
+											<span class="errMsgs"> <span
+												ng-show="cardvisaErr&&dirtycardvisaErr">Visa
+													card-number should start with "4", total of 16 digits</span> <span
+												ng-show="cardamexErr&&dirtycardamexErr">Amex
+													card-number should start with "34", total of 15 digits</span> <span
+												ng-show="ownerErr&&dirtyownerErr">Card owner name is
+													not valid! </span> <span ng-show="expiryErr&&dirtyexpiryErr">Your
+													card has expired!</span> <span ng-show="cvvErr&&dirtycvvErr">CVV
+													code should contain 3 digits only!</span>
+											</span>
+
+											<!--Total amount is displayed to the user before paying-->
+											<ul>
+												<li>Total Amount: {{ bookName[0].price }}</li>
+											</ul>
+											<br />
+											<!--Paying button. Using ng-click, the function "pay()" is invoked in the controller-->
+											<button class="btn btn-success btn-lg btn-block"
+												role="button" ng-click="pay(bookName[0].name)"
+												ng-disabled="cvvErr||expiryErr||ownerErr||cardamexErr||cardvisaErr">Pay</button>
+
+											<!--If purchase did not succeed, an alert message will be shown-->
+											<div ng-show="purchNotSucceeded">
+												<div class="alert alert-danger" role="alert">{{errmsg}}</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+<!--END OF PAYMENT MODAL-->
+
+<!-- ---------------------------------------------------------------------------------ADD REVIEW SECTION------------------------------------------------------------ -->
+<!--ADD REVIEW MODAL. invoked by clicking "ADD REVIEW" button-->
+
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+						aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"
+										aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<h4 class="modal-title" id="myModalLabel">Add a review for
+										this book</h4>
+								</div>
+								<!--modal body-->
+								<div class="modal-body">
+									<form name="userAddReview">
+										<div class="form-group"
+											ng-class="{ 'has-error' : userAddReview.review.$dirty && userAddReview.review.$error.required}">
+											<label for="message-text" class="control-label">Your
+												Review: &nbsp <small>up to 1000 characters</small></label>
+											<textarea class="form-control" name="review"
+												id="message-text" maxlength="1000" ng-model="review" required></textarea>
+												<div ng-show="showErrMsg">
+											<div class="alert alert-warning" role="alert"> Review should be between 1 to 1000 characters!</div>
+										</div>
+										</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<div class="form-actions">
+										<button type="button" class="btn btn-default"
+											data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary"
+											ng-click="SubmitRev()" ng-disabled="userAddReview.$invalid">Save
+											changes</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--after submitting a review, success alert is shown-->
+
+					<div ng-show="reviewSubmitted">
+						<div id="verification" class="alert alert-success" role="alert">
+							Your review has been been sent to verification!</div>
+					</div>
+
+
+				</div>
+
+
+
+<!-- ---------------------------------------------------------------COLLAPSED REVIEWS SECTION------------------------------------------------------------------------------ -->
+<!--Using panel group we display all of the approved reviews-->
+				<div class="col-sm-12" id="collapseRev">
+					<div class="panel-group" id="panel-first">
+						<div class="panel panel-default" id="panel-second"
+							ng-click="ShowBookReviews(bookName[0].name)">
+							<div class="panel-heading" id="panelheadingReview" toggle
+								target="collapse">
+								<h4 class="panel-title ">
+									<a data-toggle="collapse" data-parent="#myGroup"
+										href="#collapse0" id="bookDispBtn">View Reviews</a>
+								</h4>
+								<div class="pre-scrollable">
+									<div id="collapse0" class="panel-collapse collapse" toggleable
+										active-class="in" exclusion-group="accordion1"
+										default="active">
+										<div ng-repeat="review in reviews">
+
+											<div class="media">
+												<div class="media-left"></div>
+												<div class="media-body">
+													<h3 class="media-heading" id="userReviewHeading">{{review.username}}'s
+														thoughts:</h3>
+													<p id="userReview">"{{review.review}}"
+													<p>
+													<hr>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<script src="js/bookDisplayController.js"></script>

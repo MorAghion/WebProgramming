@@ -1,0 +1,40 @@
+<!--Admin's manage reviews page. gets from the controller  All of the pending reviews and displays them in a scrollable table-->
+<div ng-controller="manageReviewsController">
+<h1>MANAGE REVIEWS</h1>
+
+<div class="list-group">
+<br>
+<br>
+<div class="panel panel-default"  id="transactiontable">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Manage Reviews</div>
+
+  <!-- Table -->
+    <div class="pre-scrollable" id="scrolling">
+  <table class="table">
+   	     <tr >
+		    <th>Review id</th>
+		    <th>Book name</th> 
+		    <th>User's name</th> 
+		    <th>review</th> 
+		    <th>Approve/Decline </th> 
+		    
+	 	 </tr>
+	 	 
+	 	 <tr ng-repeat="review in unApprovedReviews" >
+		    <td>{{review.id}}</td>
+		    <td>{{review.bookname}}</td> 
+		    <td>{{review.username}}</td>
+		    <td>{{review.review}}</td> 
+		    <td>
+		    <button type="button" class="btn btn-success" ng-click="approve(review.id)" id="adminBtn">Approve Review</button> 
+    		<button type="button" class="btn btn-danger" ng-click="decline(review.id)" id="adminBtn">Decline Review</button> 
+		    </td> 
+		    
+		    
+	 	 </tr>
+  </table>
+</div>
+</div>
+</div>
+</div>

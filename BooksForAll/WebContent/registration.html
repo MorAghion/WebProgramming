@@ -1,0 +1,166 @@
+<!--registration form. contains fields to fill by the user. all of the details are later-on bind with the controller-->
+<!--There is client-side verification and if one of the details are not filled properly, an alert message is shown real-time.-->
+<div ng-controller="registrationController" id="regForm">
+<h3> Please enter your details</h3>
+
+<!--REGISTRATION FORM STARTS-->
+    <form name="registrationForm" target="_self" ng-submit="Register()" > 
+     
+<!--ENTER USERNAME. Verifies that the user filled this field with no special characters-->	 
+     <div  class="form-group" ng-class="{ 'has-error' : registrationForm.username.$dirty && (registrationForm.username.$error.required ||registrationForm.username.$error.pattern )}">
+    <div><span class="glyphicon glyphicon-user" aria-hidden="true" ></span>
+       <span title="Up to 10 characters"><b>User name: </b> </span>
+            <span id="red" ng-show="registrationForm.username.$dirty && registrationForm.username.$error.required" >User name is required!</span>
+	        <span id="red" ng-show="registrationForm.username.$error.pattern" >No special characters are allowed!</span>
+         <br>
+	        <div class="col-sm-4 col-sm-offset-4">
+	        <input class="form-control" type="text" name="username" maxlength="10" 
+	        		autocomplete="on" ng-model="username" ng-pattern="/^[a-zA-Z0-9]{1,10}$/" required placeholder="Required field, it will be only visible to us">
+
+	        </div></div>
+	        </div>
+	    <br><br>
+ 
+<!--ENTER EMAIL. Verifies that the user filled this field properly-->	  
+     <div class="form-group" ng-class="{ 'has-error' : registrationForm.email.$dirty && (registrationForm.email.$error.required || registrationForm.email.$error.email) }">    
+    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+        E-mail:
+        <span id="red"  ng-show="registrationForm.email.$dirty && registrationForm.email.$error.required" >Email name is required!</span>
+         <span id="red"  ng-show="registrationForm.email.$dirty && registrationForm.email.$error.email" >Invalid Email address!</span>
+	    <br> 
+	        <div class="col-sm-4 col-sm-offset-4">
+	        <input class="form-control" type="email" name="email" autocomplete="off" ng-model="email" placeholder="example@example.com" required>
+	        </div></div>
+	    <br><br>
+	    
+<!--ENTER PHONE. Verifies that the user filled this field properly. The prefix is a selected list-->		    
+	 <div class="form-group" ng-class="{ 'has-error' : registrationForm.phone.$dirty && (registrationForm.phone.$error.required || registrationForm.phone.$error.pattern) }">     
+    <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+        Telephone:
+        <span id="red"  ng-show="registrationForm.phone.$dirty && registrationForm.email.$error.required" >Phone is required!</span>
+         <span id="red"  ng-show="registrationForm.phone.$error.pattern" >Phone number should include only numbers!</span>
+    	<br>
+	        <div class="col-sm-1 col-sm-offset-4">                     
+	        <select class="form-control" id="prefix" name="areacode">
+	            <option value="02">02</option>
+	            <option value="03">03</option>
+	            <option value="04">04</option>
+	            <option value="08">08</option>
+	            <option value="09">09</option>
+	            <option value="050">050</option>
+	            <option value="052">052</option>
+	            <option value="053">053</option>
+	            <option value="054">054</option>
+	        </select> 
+	        </div>
+	        <div class="col-sm-3"> 
+	        <input class="form-control" type="tel" name="phone" maxlength="7" ng-pattern="/^[0-9]{1,7}$/" ng-model="phone" required>
+	        </div></div>
+        <br><br>
+
+<!--ENTER CITY. Verifies that the user filled this field properly, no special characters and minimum of 3 characters-->	        
+      <div class="form-group" ng-class="{ 'has-error' : (registrationForm.city.$dirty && (registrationForm.city.$error.required || registrationForm.city.$error.pattern||registrationForm.city.$error.minlength))}">  
+     <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+        City:
+        <span id="red"  ng-show="registrationForm.city.$dirty && registrationForm.city.$error.required" >City is required!</span>
+         <span id="red"  ng-show="registrationForm.city.$error.pattern" >No special characters are allowed!</span>
+         <span id="red"  ng-show="registrationForm.city.$error.minlength" >Minimum 3 characters</span>
+        <br> 
+        	<div class="col-sm-4 col-sm-offset-4">
+        	<input class="form-control" type="text" name="city" ng-model="city" ng-pattern="/^[a-zA-Z ]{1,30}$/" ng-minlength="3" required>
+        	</div></div>
+        <br><br>
+        
+<!--ENTER STREET. Verifies that the user filled this field properly, no special characters and minimum of 3 characters-->	                
+      <div class="form-group" ng-class="{ 'has-error' : (registrationForm.street.$dirty && (registrationForm.street.$error.required || registrationForm.street.$error.pattern||registrationForm.street.$error.minlength ))}">  
+     <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+        Street:
+        <span id="red"  ng-show="registrationForm.street.$dirty && registrationForm.street.$error.required" >Street is required!</span>
+          <span id="red"  ng-show="registrationForm.street.$error.pattern" >No special characters are allowed! </span>
+          <span id="red"  ng-show="registrationForm.street.$error.minlength" > Minimum 3 characters</span>
+        <br> 
+        	<div class="col-sm-4 col-sm-offset-4">
+			<input class="form-control" type="text" name="street" ng-pattern="/^[a-zA-Z ]{1,30}$/" ng-model="street" ng-minlength="3" required>
+			</div></div>
+        <br><br>
+        
+ <!--ENTER HOUSE NUMBER. Verifies that the user filled this field properly, only digits-->	              
+     <div class="form-group" ng-class="{ 'has-error' : (registrationForm.number.$dirty && (registrationForm.number.$error.required || registrationForm.number.$error.pattern))}" 
+     								ng-class="{ 'has-error':	(registrationForm.zipcode.$dirty && (registrationForm.zipcode.$error.required || registrationForm.zipcode.$error.pattern))}">     
+    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>       
+        House Number:
+        <span id="red"  ng-show="registrationForm.number.$dirty && registrationForm.number.$error.required" >House number is required!</span>
+        <span id="red"  ng-show="registrationForm.number.$error.pattern" >House number should include only numbers! </span>
+        <br>	
+			<div class="col-sm-4 col-sm-offset-4">
+        	<input class="form-control" type="text" name="number" ng-pattern="/^[1-9]{1,5}$/" ng-model="number" required>
+        	</div>
+        	</div>
+        <br><br>
+        
+ <!--ENTER ZIPCODE. Verifies that the user filled this field properly, 7 digits exactly-->	        
+        <div class="form-group" ng-class="{ 'has-error':	(registrationForm.zipcode.$dirty && (registrationForm.zipcode.$error.required || registrationForm.zipcode.$error.pattern))}">     
+    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>       
+        Zipcode:
+        <span id="red"  ng-show="registrationForm.zipcode.$dirty && registrationForm.zipcode.$error.required" >Zipcode is required!</span>
+        <span id="red"  ng-show="registrationForm.zipcode.$error.pattern" >Zipcode should include only numbers, and 7 digits exactly</span>
+        <br>	
+        	<div class="col-sm-4 col-sm-offset-4">
+        	<input class="form-control" type="text" name="zipcode" ng-pattern="/^[0-9]{7}$/" ng-model="zipcode" maxlength="7"  ng-minlength="7" required>
+        	</div></div>
+        <br><br>
+        
+<!--ENTER PASSWORD. Verifies that the user filled this field properly-->	        
+     <div class="form-group" ng-class="{ 'has-error' :  registrationForm.password.$dirty && registrationForm.password.$error.required}">     
+    <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>        
+        <span title="Up to 8 characters"><b> Password: </b></span>
+        <span id="red"  ng-show="registrationForm.password.$dirty && registrationForm.password.$error.required" >Password is required!</span>
+        <br>
+        	<div class="col-sm-4 col-sm-offset-4">
+        	<input class="form-control" type="password" name="password" maxlength="8" ng-model="password" required placeholder="Required feild">
+        	</div></div>
+        <br><br>
+        
+ <!--ENTER NICKNAME. Verifies that the user filled this field properly, with no special characters-->	         
+     <div class="form-group" ng-class="{ 'has-error' :  registrationForm.nickname.$dirty && (registrationForm.nickname.$error.required || registrationForm.nickname.$error.pattern)}">     
+    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>        
+       <span title="Up to 20 characters"><b> User nick-name:</b></span>
+        <span id="red"  ng-show="registrationForm.nickname.$dirty && registrationForm.nickname.$error.required" >Nickname is required!</span>
+        <span id="red"  ng-show="registrationForm.nickname.$error.pattern" >No special characters are allowed!</span>
+        <br>
+        	<div class="col-sm-4 col-sm-offset-4">
+        	<input class="form-control" type="text" name="nickname"  maxlength="20" ng-model="nickname" ng-pattern="/^[a-zA-Z0-9]{1,20}$/" required placeholder="Required field, it will be visible to everyone">
+        	</div></div>
+        <br><br>
+        
+ <!--ENTER DISCRIPTION-->	 
+    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>        
+      <span title="Up to 50 characters"><b>  Description: </b></span>
+        <br>
+            <div class="col-sm-4 col-sm-offset-4">
+        	<input class="form-control" type="text" name="description" maxlength="50" ng-model="description" placeholder="Tell us something about yourself">
+        	</div>
+		<br><br>
+		
+		
+ <!--ENTER URL PHOTO-->
+    <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>        
+        Photo:
+        <br>
+        	<div class="col-sm-4 col-sm-offset-4">
+        	<input class="form-control" type="url" name="photo" ng-model="photo" placeholder="You can add a url with your photo">
+        	</div>
+        <br><br>
+        
+<!--If there is a server verification problem, an alert is shown -->		
+        <div class="form-actions" >
+         <div class="alert alert-danger" id="regAlert" role="alert" ng-show="userExists">User name already exists!</div>
+        <div class="alert alert-danger" id="regAlert" role="alert" ng-show="somethingWrong">One or more of your details are not correct</div>
+        <div class="alert alert-success" id="regAlert" role="alert" ng-show="regSucceeded">Congrats! Registration succeeded!</div>
+        
+        <button type="submit" class="btn btn-success" ng-disabled="registrationForm.$invalid">Register</button>
+        <button type="reset" class="btn btn-default">Reset Details</button>
+        </div>
+   
+    </form>
+</div>

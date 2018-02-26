@@ -1,0 +1,323 @@
+
+#cardPic
+{
+	width:120px;
+	height:80px;
+}
+
+#paymentContainer
+{
+	 padding-right: 15px;
+    padding-left: 15px;
+}
+#expiryMonth
+{
+	text-align:center;
+	padding:1px;
+}
+#myPaymentRow
+{
+
+float:left;
+}
+
+
+/****************************************************************************************************************************************/
+
+.my .glyphicon {
+      pointer-events: all;
+    }
+    
+
+@media only screen and (max-width: 768px)   
+{
+#bookThumbnail{
+	border: 2px solid white;
+	height:485px;
+	float: left;
+	margin:10px;
+   background-color: rgba(255,255,255, 0.8);
+   font-family: courgette;
+   font-size: 16px;
+ }   
+
+}   
+
+@media only screen and (min-width: 768px)   
+{
+#bookThumbnail{
+	border: 2px solid white;
+	height:485px;
+	float: left;
+	width:40%;
+	margin:10px;
+   background-color: rgba(255,255,255, 0.8);
+   font-family: courgette;
+   font-size: 16px;
+ }   
+
+}   
+
+@media only screen and (min-width: 768px)
+{
+#booksrow
+{
+		margin-left:110px;
+	
+}
+}
+/****************************************************************************************************************************************/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext 
+{
+    visibility: visible;
+}
+/****************************************************************************************************************************************/
+
+
+ .thumbnail.right-caption > img {
+    float: left;
+    margin-right: 9px;
+    margin-top: 35px;
+    margin-left: 10px;
+
+}
+
+.thumbnail.right-caption {
+    float: left;
+    margin-right: 20px;
+    margin-left: 40px;
+    width: 45%;
+    /*height: 290px;*/
+}
+
+.thumbnail.right-caption > .caption {
+    padding: 4px;
+      margin: 20px;
+}
+
+.userText{
+	text-align:left;
+	font-family: raleway;
+}
+
+#floatleftglificone{
+
+	    float: left;
+	    cursor:pointer;
+
+	
+}
+
+
+#deleteuserbutton{
+	 float: right;
+	background-color: #ffcf6e;
+	border: #ffd98c;
+	margin-bottom:20px
+
+	
+}
+
+#transactiontable
+{
+	width:90%;
+	margin:auto;
+	text-align: left;
+}
+
+
+#userdetailthumbnail
+{
+	margin-top:10%;
+	height:50%;
+	width:80%;
+	margin-left:10%;
+}
+
+
+
+
+#mynavbarbrand
+{
+	padding-top:4px;
+}
+
+#collapseRev
+{
+	float:left;
+	margin: 0px;
+	text-align: left;
+	position: relative;
+	background-color: transparent;
+
+}
+
+#userReview
+{
+	text-align:left;
+	border-radius:12px;
+	background-color: white;
+	font-family: indie;
+	font-size:20px;
+	font-weight: bold;
+	
+	
+}
+#userReviewHeading
+{
+	width:200px;
+	text-align:left;
+	border-radius:12px;
+	background-color: white;
+	font-family: indie;
+	 font-weight: bold;
+	font-size:24px;
+}
+
+#panelheadingReview
+{		
+	background-color: transparent;	
+		border-radius:12px;
+	
+}
+
+#panel-first
+{
+	background-color: rgba(255,255,255,0.5);
+		border-radius:12px;
+	
+}
+
+#panel-second
+{
+	background-color: rgba(255,255,255,0.5);
+		border-radius:12px;
+	
+}
+/**********************************************ADMIN*************************************************************/
+
+#adminBtn
+{
+	margin-top:5px;
+	width: 125px;
+}
+
+#adminLikes
+{
+
+    left: -2%;
+    top:5px;
+    background-color:transparent;
+    border: none;
+    color: red;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 5px;
+    border-radius: 4px;
+	
+
+}
+#regForm
+{
+	font-weight:bold;
+	font-family:ralewayBold;
+}
+
+#userImg
+{
+	width:120px; 
+	height:160px;
+}
+
+#htmlbook
+{
+	    background-color:white;
+	    padding:5px;
+}
+#rowBookDisplay
+{
+	margin-top: 80px
+}
+.errMsgs
+{
+	color: red;
+}
+/********************************************************************/
+
+
+.dropdown 
+{
+	position:relative;
+	display: inline-block;
+}
+
+.dropdown-content 
+{
+	position:absolute;
+	display:none;
+	background-color:black;
+	text-align:center;
+	z-index:1;
+	/*left:50%;
+	margin-left:-60px;*/
+	border-radius: 10px;
+	font-family:raleway;
+	font-size:13px;
+	color:white;
+}
+
+.dropdown-content a 
+{
+	color:white;
+	padding: 12px;
+	text-decoration: none;
+	display: block;
+}
+
+ .dropdown-content a:hover 
+ {
+	color:white;
+	text-decoration:underline;
+ }
+
+.tooltip
+{
+	background-color:black;
+	border-radius: 10px;
+}
+
+#scrolling
+{
+	max-height:420px;
+}
+
+#verification
+{
+	width:50%;
+	text-align:center;
+	margin: auto;
+}
+

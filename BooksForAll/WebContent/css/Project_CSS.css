@@ -1,0 +1,337 @@
+/*CSS FILE*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+	background-image: url('a8.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment:fixed;
+
+	padding-top: 0px;
+	text-align: center;
+
+}
+
+#welcomeJumb
+{
+	padding-top: 90px;
+	padding-bottom: 0px;
+	background-color: Transparent ;
+
+}
+
+#welcomeJumbHead
+{
+	font-family:berkshire;
+	font-size: 50px;
+}
+
+#welcomeJumbText
+{
+	font-family:raleway;
+	font-weight: bold;
+}
+#btn{
+	patting-top:30px;
+}
+#join{
+	
+	font-style: italic;
+	color: white;
+	border: 1px solid black;
+	background-color:  #3775ff;
+	font-family:raleway;
+	font-weight: bold;
+}
+
+#welcomeNav
+{
+	background-color: transparent;
+	border: 2px white;
+}
+
+#navbar-brand{
+	margin-top:0px;
+	cursor: pointer;
+	z-index:1;
+	width:160px; 
+	height:90px
+}
+
+#welcomeBorder{
+	padding: 30px;
+	border: 4px solid white;
+	border-radius: 60px;
+	background-color:rgba(255,255,255,0.8);
+	border-collapse: seperate;
+	border-spacing: 15px;
+}
+input-group{
+	  width: 200px; 
+  min-width:200px; 
+  max-width:200px; 
+
+  height:200px; 
+  min-height:200px;  
+  max-height:200px;
+}
+
+#book1 {
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 40%;
+}
+
+#myCarousel{
+pdding-top:0;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+
+#userDetails
+{
+    text-align: right;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+#red {
+	color: #035ccb;
+}
+
+#price{
+	text-align: right;
+}
+
+#likesRed
+{
+
+    left: -2%;
+    top:5px;
+    background-color:transparent;
+    border: none;
+    color: red;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 5px;
+    cursor: pointer;
+    border-radius: 4px;
+	
+
+}
+
+#likesBlack
+{
+
+    left: -2%;
+    top:5px;
+    background-color:transparent;
+    border: none;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 5px;
+    cursor: pointer;
+    border-radius: 4px;
+	
+
+}
+
+
+.panel-group{
+
+	text-align: center;
+	
+	margin: 15px 0;
+}
+
+
+#panel-group2{
+	width:800px;
+	
+	margin: 15px 0;
+	border-radius: 80px;
+	background-color: red;
+	poacity: 0.5;
+}
+
+.booksReviews{
+	width:100px;
+}
+
+/*************************/
+
+.container {
+    position: relative;
+   /* width: 50%;*/
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 85%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  border: 4px solid black;
+}
+
+
+#bookDispText
+{
+	  float:left;
+	  float:right;
+	  color:black;
+	  font-size: 27px;
+	  text-align: left;
+	  font-family: courgette;
+	  font-weight: bold;
+	  /*background-color: rgba(255, 255, 230, 0.8);*/
+	  border-radius: 20px;
+	
+}
+
+#bookDispHeader
+{
+	  font-size: 40px;
+	 text-align: left;
+	 	  font-family: courgette;
+	 	  font-weight: bold;
+	
+}
+
+#bookDispPrice
+{
+	color:black;
+	font-size: 20px;
+	text-align: left;
+	font-family: courgette;
+	
+}
+
+#bookDispBtn
+{
+	text-align: left;
+	top:5px;
+	font-size: 15px;
+	font-family: raleway;
+}
+
+#danger-alert
+{
+	text-align: left;
+	top:5px;
+	font-size: 15px;
+	font-family: raleway;
+}
+
+.text {
+  background-color:transparent;
+  color: black;
+  font-style:italic;
+  font-weight: bold;
+  font-family: raleway;
+  
+
+}
+
+#pointer {
+	cursor:pointer;
+}
+
+#view
+{
+	/*background-size: 100% 100%;*/
+	padding-top: 60px;
+	    height:660px;
+	   font-family: raleway;
+	   font-weight: bold;
+	   
+}
+
+/******************************************************FONTS***********************************************************************/
+@font-face
+{
+    font-family: dancing;
+    src: url('../fonts/DancingScript-Bold.ttf');
+}
+@font-face
+{
+    font-family: indie;
+    src: url('../fonts/IndieFlower.ttf');
+}
+
+@font-face
+{
+    font-family: marck;
+    src: url('../fonts/MarckScript-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: pacifico;
+    src: url('../fonts/Pacifico-Regular.ttf');
+}
+@font-face
+{
+    font-family: gloria;
+    src: url('../fonts/GloriaHallelujah.ttf');
+}
+@font-face
+{
+    font-family: berkshire;
+    src: url('../fonts/BerkshireSwash-Regular.ttf');
+}
+@font-face
+{
+    font-family: raleway;
+    src: url('../fonts/Raleway-Light.ttf');
+}
+@font-face
+{
+    font-family: ralewayBold;
+    src: url('../fonts/Raleway-ExtraBold.ttf');
+}
+@font-face
+{
+    font-family: courgette;
+    src: url('../fonts/Courgette-Regular.ttf');
+}
+@font-face
+{
+    font-family: caveat;
+    src: url('../fonts/CaveatBrush-Regular.ttf');
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0; 
+    width: 150%;
+    
+}
+#navBar
+{
+	    font-family: raleway;
+	
+}

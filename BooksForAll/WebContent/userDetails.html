@@ -1,0 +1,50 @@
+<!--Gets from the controller a specific user's details-->
+<!--admin can delete a user by clicking "delete user" button that invokes deleteUser() function in the controller-->
+<div ng-controller="userDetailsController">
+
+		<div class="thumbnail right-caption span4" id="userdetailthumbnail">
+		  	<img id="userImg" ng-src={{currentUser.photo}} class="media-object" alt="userPhoto" >
+			  <div class="caption">
+			    <h4 class="userText">{{currentUser.username}}</h4>
+			    <h5 class="userText"><b>User's Nickname: </b>{{currentUser.nickname}}</h5>
+				    <h5 class="userText"><b>User's Email: </b> {{currentUser.email}}</h5>
+				    <h5 class="userText"> <b>User Phone: </b> {{currentUser.phone}}</h5>
+		   			<h5 class="userText"><b>User's address: </b> {{currentUser.number }} {{currentUser.street }} {{currentUser.city }} &nbsp &nbsp &nbsp<b>Zipcode: </b> {{currentUser.zipcode}} </h5>
+		   			<h5 class="userText"><b>User's description: </b> {{currentUser.description}}</h5>
+		   			<h5  id="floatleftglificone" class="glyphicon glyphicon-heart" aria-hidden="true" data-toggle="tooltip" title={{currentUser.booksLiked}}>
+		   					<span>  {{currentUser.username}}'s likes</span></h5>
+			    <h5><button type="button" class="btn btn-warning" id="deleteuserbutton" 
+			  				data-toggle="modal" data-target="#deleteSingleUserModal">Delete User</button></h5>
+			  </div>
+			</div>
+			
+<!-- ----------------------------------------------------DELETE USER------------------------------------------------------>				
+				
+				<div class="modal fade" id="deleteSingleUserModal" tabindex="-1" role="dialog"
+					aria-labelledby="deleteSingleUserModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"
+									aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h4 class="modal-title" id="deleteSingleUserModalLabel">Delete User</h4>
+							</div>
+<!--modal body-->							
+							<div class="modal-body">Are you sure you want to delete this user?</div>
+							<div class="modal-footer">
+								<div class="form-actions ">
+									<button type="button" class="btn btn-danger"
+										data-dismiss="modal" ng-click="toDelete('no',currentUser.username)">No</button>
+									<button type="button" class="btn btn-success" 
+									data-dismiss="modal" ng-click="toDelete('yes',currentUser.username)">Yes</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	  			
+			
+</div>
+    
+    

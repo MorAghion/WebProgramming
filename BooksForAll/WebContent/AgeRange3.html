@@ -1,0 +1,40 @@
+<!--Gets from the controller all the books in array called "data". Using ng-repeat and ng-switch, books are displayed by pairs-->
+<!-- The information displayed: book image, book name, book description, book price, book likes-->
+<!--Age range : 13 and above-->
+<div id="age-books">
+<div class="container"  ng-controller="booksController">
+<h2>BOOKS FOR AGES 13 AND ABOVE</h2>
+
+  <div ng-repeat="book in data" ng-switch="$index%2" >
+            <div class="row" ng-switch-when="0" id="booksrow">
+            
+            
+<div  class="thumbnail" id="bookThumbnail">
+<a ng-click="getBookName( data[$index].name ); newpath('bookDisplay.html')"  id="pointer">
+     	<img  ng-src={{data[$index].photo}}  alt="bookCover" width=40% /></a>
+     	 <div class="caption">
+     
+        <a  ng-click="getBookName( data[$index].name ); newpath('bookDisplay.html')"  id="pointer" ><h3>{{data[$index].name}}</h3></a>
+        <p>{{data[$index].description}}</p>
+        <p  class="glyphicon glyphicon-credit-card"  aria-hidden="true" ><span id="price">{{data[$index].price}}  <br>  </span></p>
+        <p id="likes" class="glyphicon glyphicon-heart red"  aria-hidden="true">{{data[$index].likes}} </p>               
+</div>
+</div>
+ <div ng-show="length> $index+1">             
+<div  class="thumbnail" id="bookThumbnail">
+<a ng-click="getBookName( data[$index+1].name ); newpath('bookDisplay.html')"  id="pointer">
+     	<img  ng-src={{data[$index+1].photo}}  alt="bookCover" width=40% /></a>
+     	 <div class="caption">
+     
+        <a  ng-click="getBookName( data[$index+1].name ); newpath('bookDisplay.html')"  id="pointer" ><h3>{{data[$index+1].name}}</h3></a>
+        <p>{{data[$index+1].description}}</p>
+        <p  class="glyphicon glyphicon-credit-card"  aria-hidden="true" ><span id="price">{{data[$index+1].price}}  <br>  </span></p>
+        <p id="likes" class="glyphicon glyphicon-heart red"  aria-hidden="true">{{data[$index+1].likes}} </p>               
+</div>   
+</div>        
+</div>           
+              </div>
+ 
+ </div>
+ </div>
+</div>

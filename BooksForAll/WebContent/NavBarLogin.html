@@ -1,0 +1,36 @@
+<!--Login Navbar. Contains 2 input areas: username and password. Using the controller these details are checked and confirmed-->
+<div ng-controller="navbarController">
+    <nav id="welcomeNav" class="navbar navbar-inverse navbar-fixed-top" ng-submit="login()">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand "><img src="logoz.png" id="navbar-brand" alt="ebookids" ng-click="newpath('welcome.html')" ></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="User Name" class="form-control" ng-model="username" required>
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control" ng-model="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-md"  id="join">Sign in</button>
+            
+ <!--If an error returned from the controller,, an alert is displayed-->
+			<div ng-show="errLoginMsg">
+            	<div class="alert alert-danger" role="alert">"ERROR! One of the required fields is empty. Please fill it and try again!"</div>
+            </div>
+            <div ng-show="errIncorrectUser">
+            <div class="alert alert-warning" role="alert">Incorrect username or password. Please try again</div>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </nav>
+</div>

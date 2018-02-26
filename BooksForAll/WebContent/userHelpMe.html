@@ -1,0 +1,90 @@
+<!-- A "help me" page that enables the user send messages to the admin, and view her previous messages and their responses -->
+
+<div ng-controller="userHelpMeController">
+<h1>HOW CAN WE HELP YOU?</h1>
+<h4><b>Here you can write a message to us.</b></h4> 
+<h4><b>Down below you can see all of your previous messages and responses</b></h4>
+
+<div>
+<button type="button" class="btn btn-info btn-md" id="fromUser"data-target="#fromUserModal" ng-click="addHelpMe()">Send a message!</button>
+<!--HELP ME MODAL-->
+
+				<div class="modal fade" id="fromUserModal" tabindex="-1" role="dialog"
+					aria-labelledby="fromUserModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"
+									aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<h4 class="modal-title" id="fromUserModallLabel">Send a message to the admin</h4>
+							</div>
+<!--modal body-->							
+							<div class="modal-body">
+								<form name="fromUser">
+									<div class="form-group"
+										ng-class="{ 'has-error' : fromUser.msgToAdmin.$dirty && fromUser.msgToAdmin.$error.required}">
+										<label for="message-text" class="control-label">Your
+											Message: &nbsp &nbsp <small>up to 1000 characters</small> </label>
+										<textarea class="form-control" name="msgToAdmin" id="message-text"
+											ng-model="msgToAdmin" maxlength="1000" required></textarea>
+										<div ng-show="showErrMsg">
+											<div class="alert alert-warning" role="alert"> Your message is too long!</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<div class="form-actions">
+									<button type="button" class="btn btn-default"
+										data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary"
+										ng-click="SubmitHelpMe()" ng-disabled="fromUser.$invalid">Save
+										changes</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+<!--after submitting a message, success alert is shown-->
+
+				<br>
+				<div ng-show="showAddedmsg">
+					<div id="verification" class="alert alert-success" role="alert">
+						Your message has been been sent to the admin!</div>
+				</div>
+</div>
+
+
+
+<div class="panel-heading"></div>
+<div class="panel panel-info" id="transactiontable">
+
+  <!-- Table -->
+  <div class="pre-scrollable">
+ 	 <table class="table table-striped"  >
+ 	 
+ 	  
+ 	  <thead>
+	     <tr >
+		    <th>Your Message</th>
+		    <th>Our Response</th> 
+	 	 </tr>
+	  </thead>
+	 	 
+	 <tbody>	 
+	 	 <tr ng-repeat="msg in userData" >
+		    <td>{{msg.fromUser}}</td>
+			<td>{{msg.toUser}}</td> 			
+		    
+	 	 </tr>
+	  </tbody>
+    	</table>
+
+
+
+</div>
+</div>
+</div>
